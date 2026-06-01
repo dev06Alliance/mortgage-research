@@ -13,7 +13,7 @@
           <mark>SM</mark>
           <div class="brand-title">
             <p class="eyebrow">Step 5</p>
-            <h1>Financial Position — Fund assets &amp; liabilities</h1>
+            <h1>Assets, liabilities and expenses</h1>
           </div>
         </div>
         <div class="badge">Built from step 5 content</div>
@@ -22,6 +22,10 @@
       <div class="page-layout">
         <aside class="sidebar">
           <div class="sidebar-card">
+            <div class="search-wrap">
+              <input id="site-search-input" class="search-input" type="search" placeholder="Search keywords…" autocomplete="off" />
+              <ul id="site-search-results" class="search-results" hidden></ul>
+            </div>
             <h2>Steps</h2>
             <nav>
               <ul class="sidebar-list">
@@ -39,132 +43,234 @@
 
         <section class="content">
           <article class="content-card">
-            <h2>Step 5: Financial Position — Fund assets &amp; liabilities</h2>
+            <h2>Step 5: Assets, liabilities and expenses</h2>
+            <p><strong>Mục đích của màn hình</strong></p>
+            <p>Phần này thu thập toàn bộ thông tin tài chính của SMSF và hộ gia đình bao gồm tài sản, nợ phải trả và chi phí. Dữ liệu này được dùng để tính toán khả năng trả nợ (serviceability) và đưa ra kết quả DEB.</p>
+            <p><strong>Ảnh hưởng đến Application:</strong> nếu serviceability không đạt, hệ thống sẽ cảnh báo "Servicing requirement not met" và broker cần điều chỉnh hồ sơ.</p>
+
+            <h3>1. SMSF assets</h3>
+            <p>Tài sản thuộc sở hữu của quỹ SMSF, bao gồm bất động sản đầu tư, tiền tiết kiệm và khoản đặt cọc.</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Keyword</th>
+                  <th>Tên tiếng Việt</th>
+                  <th>Ý nghĩa</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>SMSF assets</td><td>Tài sản SMSF</td><td>Toàn bộ tài sản thuộc sở hữu hoặc do quỹ SMSF nắm giữ.</td></tr>
+                <tr><td>2</td><td>Select which SMSF assets you would like to add first</td><td>Chọn loại tài sản SMSF muốn thêm trước</td><td>Lời nhắc chọn loại tài sản để bắt đầu nhập thông tin vào hồ sơ SMSF.</td></tr>
+                <tr><td>3</td><td>Existing Investment Property</td><td>Bất động sản đầu tư hiện có</td><td>BĐS đầu tư mà SMSF đang sở hữu, thường đang cho thuê để tạo thu nhập.</td></tr>
+                <tr><td>4</td><td>Savings and Investment</td><td>Tiền tiết kiệm và đầu tư</td><td>Tiền mặt, term deposit, cổ phiếu hoặc managed fund trong tài khoản SMSF.</td></tr>
+                <tr><td>5</td><td>Deposit paid on Investment Property</td><td>Tiền cọc đã đặt cho BĐS đầu tư</td><td>Khoản tiền đã thanh toán trước (thường 10–20% giá trị BĐS) để đặt mua BĐS đầu tư, giao dịch chưa hoàn tất.</td></tr>
+                <tr><td>6</td><td>Asset type</td><td>Loại tài sản</td><td>Phân loại tài sản được thêm vào hồ sơ, ví dụ: property, cash, shares.</td></tr>
+                <tr><td>7</td><td>Details</td><td>Chi tiết</td><td>Thông tin mô tả chi tiết về tài sản, ví dụ địa chỉ BĐS hoặc tên tổ chức tài chính.</td></tr>
+                <tr><td>8</td><td>Amount</td><td>Giá trị</td><td>Giá trị bằng tiền của tài sản được khai báo.</td></tr>
+                <tr><td>9</td><td>Actions</td><td>Thao tác</td><td>Các nút chức năng cho phép chỉnh sửa hoặc xóa mục đã nhập.</td></tr>
+                <tr><td>10</td><td>Total SMSF assets</td><td>Tổng tài sản SMSF</td><td>Tổng giá trị tất cả tài sản của SMSF sau khi cộng dồn các mục đã khai báo.</td></tr>
+                <tr><td>11</td><td>Broker notes on SMSF Asset details</td><td>Ghi chú của broker về tài sản SMSF</td><td>Phần broker ghi chú nội bộ về tài sản SMSF để bổ sung ngữ cảnh cho hồ sơ.</td></tr>
+                <tr><td>12</td><td>Enter broker note</td><td>Nhập ghi chú của broker</td><td>Ô nhập liệu để broker điền ghi chú về tài sản SMSF.</td></tr>
+                <tr><td>13</td><td>Continue</td><td>Tiếp tục</td><td>Nút xác nhận và chuyển sang phần tiếp theo trong bước nhập tài sản.</td></tr>
+              </tbody>
+            </table>
+
+            <h3>2. SMSF liabilities</h3>
+            <p>Các khoản nợ hiện có của quỹ SMSF, chủ yếu là khoản vay thế chấp bất động sản đầu tư.</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Keyword</th>
+                  <th>Tên tiếng Việt</th>
+                  <th>Ý nghĩa</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>SMSF liabilities</td><td>Nợ phải trả của SMSF</td><td>Tổng các khoản nợ hoặc nghĩa vụ tài chính hiện có của quỹ SMSF.</td></tr>
+                <tr><td>2</td><td>Add existing SMSF liability details</td><td>Thêm chi tiết nợ SMSF hiện có</td><td>Lời nhắc nhập thông tin các khoản nợ đang tồn tại của SMSF.</td></tr>
+                <tr><td>3</td><td>Existing Mortgage</td><td>Khoản vay thế chấp hiện có</td><td>Khoản vay có tài sản bảo đảm (BĐS) mà SMSF đang còn nợ ngân hàng hoặc tổ chức tài chính.</td></tr>
+                <tr><td>4</td><td>Property</td><td>Bất động sản</td><td>Địa chỉ BĐS được dùng làm tài sản bảo đảm cho khoản vay thế chấp.</td></tr>
+                <tr><td>5</td><td>Financial institution</td><td>Tổ chức tài chính</td><td>Tên ngân hàng hoặc công ty tài chính đang giữ khoản vay thế chấp hiện tại.</td></tr>
+                <tr><td>6</td><td>Total amount owed</td><td>Tổng số tiền còn nợ</td><td>Số dư nợ thực tế còn lại của khoản vay tính đến thời điểm hiện tại.</td></tr>
+                <tr><td>7</td><td>Facility limit</td><td>Hạn mức tín dụng</td><td>Số tiền tối đa đã được phê duyệt cho khoản vay, có thể cao hơn số dư nợ thực tế.</td></tr>
+                <tr><td>8</td><td>Monthly repayment</td><td>Khoản trả nợ hàng tháng</td><td>Số tiền phải trả mỗi tháng bao gồm cả gốc và lãi (hoặc chỉ lãi nếu là interest only).</td></tr>
+                <tr><td>9</td><td>Actions</td><td>Thao tác</td><td>Các nút chức năng cho phép chỉnh sửa hoặc xóa khoản nợ đã nhập.</td></tr>
+                <tr><td>10</td><td>To be refinanced</td><td>Sẽ được tái cấp vốn</td><td>Nhãn cho biết khoản vay này sẽ được thay thế bằng khoản vay mới (refinance) trong hồ sơ hiện tại.</td></tr>
+                <tr><td>11</td><td>Notes regarding existing commitments</td><td>Ghi chú về các cam kết tài chính hiện có</td><td>Phần nhập ghi chú bổ sung về các khoản nợ hiện tại, đặc biệt khi cần hợp nhất nhiều thế chấp.</td></tr>
+                <tr><td>12</td><td>System only accepts 4 mortgages</td><td>Hệ thống chỉ chấp nhận tối đa 4 khoản thế chấp</td><td>Giới hạn kỹ thuật của hệ thống: tối đa 4 khoản mortgage. Nếu SMSF có nhiều hơn, phải hợp nhất và tóm tắt vào phần ghi chú.</td></tr>
+                <tr><td>13</td><td>Consolidate</td><td>Hợp nhất</td><td>Gộp nhiều khoản nợ hoặc thế chấp thành một để đáp ứng giới hạn của hệ thống.</td></tr>
+                <tr><td>14</td><td>Total SMSF liabilities</td><td>Tổng nợ phải trả của SMSF</td><td>Tổng giá trị tất cả khoản nợ của SMSF sau khi cộng dồn các mục đã khai báo.</td></tr>
+                <tr><td>15</td><td>Broker notes on SMSF Liabilities details</td><td>Ghi chú của broker về nợ SMSF</td><td>Phần broker ghi chú nội bộ về các khoản nợ SMSF để bổ sung ngữ cảnh cho hồ sơ.</td></tr>
+              </tbody>
+            </table>
+
+            <h3>3. SMSF expenses</h3>
+            <p>Chi phí vận hành hàng năm của quỹ SMSF, bao gồm kiểm toán, kế toán và các chi phí quản lý khác.</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Keyword</th>
+                  <th>Tên tiếng Việt</th>
+                  <th>Ý nghĩa</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>SMSF expenses</td><td>Chi phí SMSF</td><td>Tổng chi phí định kỳ phát sinh để duy trì hoạt động của quỹ SMSF.</td></tr>
+                <tr><td>2</td><td>Add SMSF expense details</td><td>Thêm chi tiết chi phí SMSF</td><td>Lời nhắc nhập thông tin các khoản chi phí vận hành của SMSF.</td></tr>
+                <tr><td>3</td><td>Annual SMSF running cost</td><td>Chi phí vận hành SMSF hàng năm</td><td>Tổng chi phí phát sinh hàng năm để duy trì SMSF, bao gồm phí kiểm toán, kế toán, phí ASIC và bảo hiểm.</td></tr>
+                <tr><td>4</td><td>Expense type</td><td>Loại chi phí</td><td>Phân loại chi phí SMSF, ví dụ: annual running cost, audit fee, accounting fee.</td></tr>
+                <tr><td>5</td><td>Amount</td><td>Số tiền</td><td>Giá trị bằng tiền của khoản chi phí được khai báo.</td></tr>
+                <tr><td>6</td><td>Actions</td><td>Thao tác</td><td>Các nút chức năng cho phép chỉnh sửa hoặc xóa chi phí đã nhập.</td></tr>
+                <tr><td>7</td><td>Annual running cost</td><td>Chi phí vận hành hàng năm</td><td>Khoản chi phí định kỳ hàng năm để duy trì hoạt động pháp lý và quản lý của SMSF.</td></tr>
+                <tr><td>8</td><td>Total SMSF expenses</td><td>Tổng chi phí SMSF</td><td>Tổng giá trị tất cả chi phí SMSF sau khi cộng dồn các mục đã khai báo.</td></tr>
+                <tr><td>9</td><td>Is Accountant Letter on hand?</td><td>Có thư xác nhận của kế toán không?</td><td>Câu hỏi xác nhận broker có sẵn thư từ kế toán chứng minh tình trạng tài chính SMSF hay chưa — một số lender yêu cầu tài liệu này.</td></tr>
+                <tr><td>10</td><td>Broker loan summary notes</td><td>Ghi chú tóm tắt hồ sơ vay của broker</td><td>Phần broker nhập tóm tắt toàn bộ hồ sơ vay để gửi kèm theo application.</td></tr>
+                <tr><td>11</td><td>Back</td><td>Quay lại</td><td>Nút quay về bước hoặc phần trước đó.</td></tr>
+                <tr><td>12</td><td>Continue</td><td>Tiếp tục</td><td>Nút xác nhận và chuyển sang phần tiếp theo.</td></tr>
+              </tbody>
+            </table>
+
+            <h3>4. Households</h3>
+            <p>Xác định các hộ gia đình liên quan đến hồ sơ vay — mỗi hộ là một đơn vị tính toán tài sản, nợ và chi phí sinh hoạt riêng biệt.</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Keyword</th>
+                  <th>Tên tiếng Việt</th>
+                  <th>Ý nghĩa</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>Households</td><td>Hộ gia đình</td><td>Đơn vị tính toán tài chính gồm những người sống chung và có tài chính chung trong hồ sơ vay.</td></tr>
+                <tr><td>2</td><td>Who's under the same home?</td><td>Những ai sống cùng nhà?</td><td>Câu hỏi xác định thành viên nào đang sống chung để nhóm vào cùng một household.</td></tr>
+                <tr><td>3</td><td>*Note: If person is living under same house but not in a relationship, must be entered as separate households</td><td>Lưu ý: Người sống chung nhưng không có quan hệ phải khai riêng hộ</td><td>Quy tắc nghiệp vụ: hai người sống chung nhà nhưng không có quan hệ hôn nhân/đối tác phải được khai báo thành hai household riêng biệt.</td></tr>
+                <tr><td>4</td><td>Household 1</td><td>Hộ gia đình 1</td><td>Nhóm đầu tiên gồm các thành viên sống chung và có tài chính chung.</td></tr>
+                <tr><td>5</td><td>Dependants?</td><td>Có người phụ thuộc không?</td><td>Câu hỏi xác định hộ gia đình có người phụ thuộc tài chính (con cái, cha mẹ) hay không — ảnh hưởng đến HEM và serviceability.</td></tr>
+                <tr><td>6</td><td>Yes</td><td>Có</td><td>Xác nhận hộ gia đình có người phụ thuộc.</td></tr>
+                <tr><td>7</td><td>No</td><td>Không</td><td>Xác nhận hộ gia đình không có người phụ thuộc.</td></tr>
+                <tr><td>8</td><td>Broker loan summary notes</td><td>Ghi chú tóm tắt hồ sơ vay của broker</td><td>Phần broker nhập ghi chú liên quan đến thông tin household cho hồ sơ vay.</td></tr>
+              </tbody>
+            </table>
+
+            <h3>5. Assets (Household)</h3>
+            <p>Tài sản cá nhân của hộ gia đình — tách biệt với tài sản SMSF, dùng để đánh giá tổng thể vị thế tài chính của người vay.</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Keyword</th>
+                  <th>Tên tiếng Việt</th>
+                  <th>Ý nghĩa</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>Assets</td><td>Tài sản</td><td>Tổng tài sản cá nhân của hộ gia đình, không bao gồm tài sản trong SMSF.</td></tr>
+                <tr><td>2</td><td>Household 1</td><td>Hộ gia đình 1</td><td>Nhãn xác định tài sản thuộc về hộ gia đình số 1.</td></tr>
+                <tr><td>3</td><td>Select which assets you would like to add first</td><td>Chọn loại tài sản muốn thêm trước</td><td>Lời nhắc chọn loại tài sản cá nhân để bắt đầu nhập vào hồ sơ.</td></tr>
+                <tr><td>4</td><td>Existing Property</td><td>Bất động sản hiện có</td><td>BĐS mà hộ gia đình đang sở hữu (nhà ở hoặc BĐS đầu tư cá nhân, không phải của SMSF).</td></tr>
+                <tr><td>5</td><td>Deposit paid on Investment Property</td><td>Tiền cọc đã đặt cho BĐS đầu tư</td><td>Khoản tiền cọc đã trả để mua BĐS đầu tư cá nhân, giao dịch chưa hoàn tất.</td></tr>
+                <tr><td>6</td><td>Savings and Investment</td><td>Tiền tiết kiệm và đầu tư</td><td>Tiền mặt, tài khoản tiết kiệm, cổ phiếu hoặc các khoản đầu tư cá nhân của hộ gia đình.</td></tr>
+                <tr><td>7</td><td>Other Assets</td><td>Tài sản khác</td><td>Các tài sản cá nhân khác như xe, đồ nội thất, thiết bị không thuộc các loại trên.</td></tr>
+                <tr><td>8</td><td>Household total assets</td><td>Tổng tài sản hộ gia đình</td><td>Tổng giá trị tất cả tài sản cá nhân của hộ gia đình sau khi cộng dồn.</td></tr>
+              </tbody>
+            </table>
+
+            <h3>6. Liabilities (Household)</h3>
+            <p>Các khoản nợ cá nhân của hộ gia đình — được tính vào serviceability cùng với nợ SMSF.</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Keyword</th>
+                  <th>Tên tiếng Việt</th>
+                  <th>Ý nghĩa</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>Liabilities</td><td>Nợ phải trả</td><td>Tổng các khoản nợ cá nhân của hộ gia đình, không bao gồm nợ trong SMSF.</td></tr>
+                <tr><td>2</td><td>Household 1</td><td>Hộ gia đình 1</td><td>Nhãn xác định khoản nợ thuộc về hộ gia đình số 1.</td></tr>
+                <tr><td>3</td><td>Add all Household 1 liabilities</td><td>Thêm tất cả khoản nợ của Hộ gia đình 1</td><td>Lời nhắc nhập đầy đủ tất cả khoản nợ cá nhân của hộ gia đình vào hồ sơ.</td></tr>
+                <tr><td>4</td><td>Existing Mortgage</td><td>Khoản vay thế chấp hiện có</td><td>Khoản vay có BĐS bảo đảm mà thành viên hộ gia đình đang còn nợ (nhà ở hoặc BĐS đầu tư cá nhân).</td></tr>
+                <tr><td>5</td><td>Personal loans / Hire purchase</td><td>Vay cá nhân / Mua trả góp</td><td>Khoản vay tiêu dùng cá nhân hoặc hợp đồng mua trả góp hàng hóa không có tài sản bảo đảm là BĐS.</td></tr>
+                <tr><td>6</td><td>Car lease</td><td>Thuê mua xe</td><td>Hợp đồng thuê tài chính xe — người dùng trả góp hàng tháng nhưng không sở hữu xe cho đến khi hết hợp đồng.</td></tr>
+                <tr><td>7</td><td>Credit card</td><td>Thẻ tín dụng</td><td>Nghĩa vụ tài chính từ thẻ tín dụng — thường tính theo hạn mức (limit) thay vì số dư thực tế khi đánh giá serviceability.</td></tr>
+                <tr><td>8</td><td>Other - HECS, rent/board, store account, etc</td><td>Khác — HECS, tiền thuê/ký túc xá, tài khoản mua sắm, v.v.</td><td>Các khoản nợ hoặc nghĩa vụ tài chính khác: HECS-HELP (nợ học phí đại học trả qua thuế), tiền thuê nhà, tài khoản mua sắm trả chậm.</td></tr>
+                <tr><td>9</td><td>Household total liabilities</td><td>Tổng nợ phải trả của hộ gia đình</td><td>Tổng giá trị tất cả khoản nợ cá nhân của hộ gia đình sau khi cộng dồn.</td></tr>
+              </tbody>
+            </table>
+
+            <h3>7. Expenses (Household)</h3>
+            <p>Chi phí sinh hoạt hàng tháng của hộ gia đình — được so sánh với chuẩn HEM và tính vào serviceability.</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Keyword</th>
+                  <th>Tên tiếng Việt</th>
+                  <th>Ý nghĩa</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>Expenses</td><td>Chi phí sinh hoạt</td><td>Tổng chi phí sinh hoạt hàng tháng của hộ gia đình, được dùng để tính toán serviceability.</td></tr>
+                <tr><td>2</td><td>Household 1</td><td>Hộ gia đình 1</td><td>Nhãn xác định chi phí thuộc về hộ gia đình số 1.</td></tr>
+                <tr><td>3</td><td>Total living expenses</td><td>Tổng chi phí sinh hoạt</td><td>Tổng tất cả chi phí sinh hoạt thực tế của hộ gia đình mỗi tháng, bao gồm thực phẩm, tiện ích, giáo dục, bảo hiểm.</td></tr>
+                <tr><td>4</td><td>Monthly</td><td>Hàng tháng</td><td>Chu kỳ tính chi phí sinh hoạt — hệ thống quy đổi về đơn vị tháng để tính serviceability.</td></tr>
+                <tr><td>5</td><td>Total expenses per month</td><td>Tổng chi phí mỗi tháng</td><td>Kết quả cuối cùng tổng hợp chi phí sinh hoạt mỗi tháng của hộ gia đình.</td></tr>
+              </tbody>
+            </table>
+
+            <h3>8. DEB result</h3>
+            <p>Kết quả đánh giá khả năng trả nợ sau khi hệ thống tổng hợp toàn bộ thông tin tài chính.</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Keyword</th>
+                  <th>Tên tiếng Việt</th>
+                  <th>Ý nghĩa</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>You are very near towards a Deb result on your loan. Just a few more details to go…</td><td>Bạn gần đạt kết quả DEB cho khoản vay. Chỉ cần thêm một vài chi tiết nữa…</td><td>Thông báo tiến độ cho biết hệ thống đã có đủ dữ liệu để sắp ra kết quả DEB — người dùng chỉ cần hoàn thành các trường còn lại.</td></tr>
+                <tr><td>2</td><td>DEB result</td><td>Kết quả DEB</td><td>Debt-to-Equity Balance — kết quả đánh giá tỷ lệ nợ/vốn chủ sở hữu và khả năng trả nợ của hồ sơ vay SMSF.</td></tr>
+              </tbody>
+            </table>
+
+            <h3>9. Servicing requirement not met</h3>
+            <p>Màn hình cảnh báo khi hồ sơ không đáp ứng tiêu chí khả năng trả nợ — broker cần điều chỉnh trước khi tiếp tục.</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Keyword</th>
+                  <th>Tên tiếng Việt</th>
+                  <th>Ý nghĩa</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>1</td><td>Servicing requirement not met. To review calculator, click this.</td><td>Không đáp ứng yêu cầu trả nợ. Nhấn để xem lại máy tính.</td><td>Cảnh báo cho biết thu nhập của hồ sơ không đủ để trả các khoản nợ theo tiêu chuẩn lender — cần xem lại bộ tính toán serviceability.</td></tr>
+                <tr><td>2</td><td>Review and Edit Application details</td><td>Xem lại và chỉnh sửa chi tiết hồ sơ</td><td>Nút cho phép broker quay lại chỉnh sửa thông tin trong hồ sơ để cải thiện kết quả serviceability.</td></tr>
+                <tr><td>3</td><td>Click to change how will you service the Loan</td><td>Nhấn để thay đổi phương án trả nợ khoản vay</td><td>Tùy chọn cho phép broker điều chỉnh cách tính serviceability, ví dụ thay đổi nguồn thu nhập hoặc cơ cấu khoản vay.</td></tr>
+                <tr><td>4</td><td>Back</td><td>Quay lại</td><td>Nút quay về bước trước để chỉnh sửa thông tin.</td></tr>
+              </tbody>
+            </table>
 
             <section class="section-card">
-              <h2>Mục đích</h2>
-              <p>Phần này tập trung vào việc thu thập và xác thực tình hình tài chính của <strong>SMSF</strong>, bao gồm tài sản, nợ phải trả, chi phí quỹ và chi phí hộ gia đình.</p>
-              <p>Các thông tin này giúp hệ thống đánh giá đầy đủ <strong>financial position</strong> của hồ sơ SMSF trước khi tiếp tục sang review và đề xuất sản phẩm.</p>
-            </section>
-
-            <section class="section-card">
-              <h2>Tổng quan</h2>
-              <div class="table-wrap">
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Keyword</th>
-                      <th>Ý nghĩa</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr><td><strong>Financial Position</strong></td><td>Mục nhập/tổng hợp tình hình tài chính liên quan đến SMSF, gồm tài sản, nợ và chi phí.</td></tr>
-                    <tr><td><strong>Fund assets &amp; liabilities</strong></td><td>Phần ghi nhận tài sản SMSF đang có và các nghĩa vụ nợ SMSF đang phải trả.</td></tr>
-                    <tr><td><strong>Assets</strong></td><td>Những giá trị thuộc sở hữu hoặc quyền lợi của SMSF.</td></tr>
-                    <tr><td><strong>Liabilities</strong></td><td>Các khoản SMSF đang nợ hoặc có trách nhiệm thanh toán.</td></tr>
-                    <tr><td><strong>Expenses</strong></td><td>Các khoản chi vận hành hoặc chi phí liên quan đến SMSF/hộ gia đình.</td></tr>
-                  </tbody>
-                </table>
-              </div>
-            </section>
-
-            <section class="section-card">
-              <h2>Fund assets</h2>
-              <div class="table-wrap">
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Keyword</th>
-                      <th>Ý nghĩa</th>
-                      <th>Ghi chú / Chứng từ</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr><td><strong>SMSF assets</strong></td><td>Các tài sản thuộc SMSF, không phải tài sản cá nhân của member.</td><td></td></tr>
-                    <tr><td><strong>Existing Investment Property</strong></td><td>Property đầu tư mà SMSF đã sở hữu trước đó.</td><td></td></tr>
-                    <tr><td><strong>Savings and Investment</strong></td><td>Tiền mặt, tiền gửi, cổ phiếu, ETF, managed funds hoặc khoản đầu tư của SMSF.</td><td></td></tr>
-                    <tr><td><strong>Deposit paid on Investment Property</strong></td><td>Khoản deposit SMSF đã thanh toán cho property đầu tư.</td><td>Deposit receipt, Contract of sale</td></tr>
-                    <tr><td><strong>Asset type</strong></td><td>Nhóm tài sản được chọn khi nhập dữ liệu.</td><td></td></tr>
-                    <tr><td><strong>Details</strong></td><td>Thông tin mô tả tài sản — địa chỉ, tổ chức giữ tiền hoặc mô tả khoản đầu tư.</td><td></td></tr>
-                    <tr><td><strong>Rental income</strong></td><td>Tiền thuê phát sinh từ tài sản đầu tư, nếu có.</td><td></td></tr>
-                    <tr><td><strong>Amount</strong></td><td>Giá trị của tài sản hoặc số tiền đã nhập.</td><td></td></tr>
-                    <tr><td><strong>Total SMSF assets</strong></td><td>Tổng giá trị các tài sản SMSF đã được nhập vào hồ sơ.</td><td></td></tr>
-                    <tr><td><strong>Broker notes on SMSF Asset details</strong></td><td>Ô ghi chú nội bộ để broker bổ sung thông tin liên quan đến tài sản.</td><td></td></tr>
-                    <tr><td><strong>Evidence / PDF upload required</strong></td><td>Tài liệu dùng để xác minh thông tin đã khai. Hệ thống yêu cầu upload khi cần.</td><td>SMSF bank statement, Deposit receipt, Contract of sale</td></tr>
-                  </tbody>
-                </table>
-              </div>
-            </section>
-
-            <section class="section-card">
-              <h2>Fund liabilities</h2>
-              <div class="table-wrap">
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Keyword</th>
-                      <th>Ý nghĩa</th>
-                      <th>Chứng từ</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr><td><strong>SMSF liabilities</strong></td><td>Các khoản vay hoặc nghĩa vụ tài chính đang thuộc SMSF.</td><td></td></tr>
-                    <tr><td><strong>Existing Mortgage</strong></td><td>Mortgage hiện tại mà SMSF đang có.</td><td>Mortgage statement</td></tr>
-                    <tr><td><strong>Liability</strong></td><td>Loại nghĩa vụ tài chính được nhập vào hồ sơ.</td><td></td></tr>
-                    <tr><td><strong>Financial institution</strong></td><td>Ngân hàng hoặc lender đang cung cấp khoản vay/khoản nợ.</td><td></td></tr>
-                    <tr><td><strong>Limit</strong></td><td>Giới hạn khoản vay hoặc hạn mức tín dụng được phê duyệt.</td><td></td></tr>
-                    <tr><td><strong>Repayment</strong></td><td>Số tiền SMSF phải trả theo kỳ cho khoản nợ.</td><td></td></tr>
-                    <tr><td><strong>To refi?</strong></td><td>Cho biết khoản nợ này có được đưa vào khoản vay refinance mới hay không.</td><td></td></tr>
-                    <tr><td><strong>Amount owed</strong></td><td>Dư nợ hiện tại của khoản vay/khoản nợ.</td><td></td></tr>
-                    <tr><td><strong>Total SMSF liabilities</strong></td><td>Tổng số tiền SMSF còn nợ theo các khoản đã nhập.</td><td></td></tr>
-                    <tr><td><strong>Refinance</strong></td><td>Dùng khoản vay mới để thay thế hoặc thanh toán khoản vay hiện tại.</td><td>Loan statement / Mortgage statement</td></tr>
-                  </tbody>
-                </table>
-              </div>
-            </section>
-
-            <section class="section-card">
-              <h2>Fund expenses</h2>
-              <div class="table-wrap">
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Keyword</th>
-                      <th>Ý nghĩa</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr><td><strong>SMSF expenses</strong></td><td>Các chi phí vận hành hoặc duy trì SMSF.</td></tr>
-                    <tr><td><strong>Annual running cost</strong></td><td>Tổng chi phí duy trì SMSF trong một năm.</td></tr>
-                    <tr><td><strong>Accounting fee</strong></td><td>Chi phí kế toán cho SMSF.</td></tr>
-                    <tr><td><strong>Audit fee</strong></td><td>Chi phí audit bắt buộc hoặc theo yêu cầu cho SMSF.</td></tr>
-                    <tr><td><strong>ASIC fee</strong></td><td>Phí liên quan đến công ty trustee nếu SMSF dùng corporate trustee.</td></tr>
-                    <tr><td><strong>Administration fee</strong></td><td>Chi phí quản lý, vận hành hoặc admin cho SMSF.</td></tr>
-                    <tr><td><strong>Tax return fee</strong></td><td>Phí chuẩn bị và nộp tax return cho SMSF.</td></tr>
-                    <tr><td><strong>Total SMSF expenses</strong></td><td>Tổng các khoản chi phí SMSF đã nhập.</td></tr>
-                  </tbody>
-                </table>
-              </div>
-            </section>
-
-            <section class="section-card">
-              <h2>Household expenses</h2>
-              <div class="table-wrap">
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Keyword</th>
-                      <th>Ý nghĩa</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr><td><strong>Household expenses</strong></td><td>Chi phí sinh hoạt của member/household, không phải chi phí vận hành SMSF.</td></tr>
-                    <tr><td><strong>No. of dependants</strong></td><td>Số người phụ thuộc tài chính vào borrower/member.</td></tr>
-                    <tr><td><strong>Summary of Household expenses</strong></td><td>Bảng tóm tắt các chi phí sinh hoạt đã nhập.</td></tr>
-                    <tr><td><strong>Total living expenses</strong></td><td>Tổng living expenses của household.</td></tr>
-                    <tr><td><strong>Total expenses</strong></td><td>Tổng tất cả chi phí của household trong hồ sơ.</td></tr>
-                  </tbody>
-                </table>
+              <h2>Tóm tắt</h2>
+              <p>Step 5 thu thập toàn bộ thông tin tài chính để hệ thống tính toán serviceability và đưa ra kết quả DEB.</p>
+              <ul>
+                <li>Khai báo tài sản và nợ của SMSF (tách biệt với tài sản cá nhân)</li>
+                <li>Khai báo chi phí vận hành SMSF hàng năm</li>
+                <li>Xác định cấu trúc household và người phụ thuộc</li>
+                <li>Khai báo tài sản, nợ và chi phí sinh hoạt của từng hộ gia đình</li>
+                <li>Hệ thống tổng hợp để ra kết quả DEB — nếu không đạt, hiển thị cảnh báo serviceability</li>
+              </ul>
+              <div class="callout">
+                Nếu xuất hiện cảnh báo "Servicing requirement not met", broker cần xem lại calculator hoặc điều chỉnh thông tin hồ sơ trước khi nhấn <strong>Continue</strong>.
               </div>
             </section>
           </article>
@@ -172,7 +278,7 @@
       </div>
 
       <footer class="site-footer">
-        Step 5 mô tả chi tiết vị thế tài chính của SMSF, giúp đánh giá khả năng vay và tính đầy đủ của hồ sơ.
+        Bước này đảm bảo toàn bộ vị thế tài chính của SMSF và hộ gia đình được khai báo đầy đủ để hệ thống đánh giá khả năng trả nợ.
       </footer>
     </div>
   </body>
