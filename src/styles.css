@@ -5,6 +5,7 @@
   --color-canvas: #ffffff;
   --color-canvas-soft: #e8ebe6;
   --color-ink: #0e0f0c;
+  --color-ink-deep: #163300;
   --color-body: #454745;
   --color-mute: #868685;
   --color-positive: #2ead4b;
@@ -183,7 +184,7 @@ a:hover {
   font-size: clamp(2.5rem, 4vw, 3.75rem);
   line-height: 0.95;
   letter-spacing: -0.04em;
-  color: var(--color-ink);
+  color: var(--color-ink-deep);
 }
 
 .hero-card p,
@@ -216,24 +217,42 @@ a:hover {
 .content-card h2,
 .section-card h2,
 article h2,
-article h3 {
-  color: var(--color-ink);
+article h3,
+article h4 {
+  color: var(--color-ink-deep);
 }
 
 article h2 {
   margin-top: 0;
-  font-size: 1.7rem;
+  font-size: 2rem;
+  line-height: 1.1;
+  border-bottom: 1px solid #dfe6de;
+  padding-bottom: 10px;
+  margin-bottom: 28px;
 }
 
 article h3 {
-  font-size: 1.16rem;
-  margin-top: 32px;
+  font-size: 1.28rem;
+  line-height: 1.2;
+  margin-top: 36px;
+  margin-bottom: 16px;
+}
+
+article h4 {
+  font-size: 1.05rem;
+  line-height: 1.35;
+  margin-top: 28px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  border-left: 4px solid var(--color-primary);
+  padding-left: 14px;
 }
 
 article p,
 article li {
   font-size: 1rem;
-  margin: 0 0 16px;
+  margin: 0 0 18px;
 }
 
 article ul {
