@@ -16,7 +16,7 @@
             <h1>Solution</h1>
           </div>
         </div>
-        <div class="badge">Coming soon</div>
+        <div class="badge">Built from Solution_and_Security.md</div>
       </header>
 
       <div class="page-layout">
@@ -40,122 +40,96 @@
         <section class="content">
           <article class="content-card">
             <h2>Step 1: Solution</h2>
+
             <section class="section-card">
-              <h2>1.1. Màn hình: Confirm loan features</h2>
-              <h3>Mục đích</h3>
-              <p>Step <strong>Solution</strong> là bước đầu tiên trong Application. Mục tiêu của bước này là thu thập các thông tin cơ bản về khoản vay để hệ thống có thể chọn ra <strong>Solution</strong> phù hợp cho khách hàng.</p>
+              <h2>Mục đích</h2>
+              <p>Step <strong>Solution</strong> là bước đầu tiên trong Application. Mục tiêu là thu thập các thông tin cơ bản về khoản vay để hệ thống chọn ra <strong>Solution</strong> phù hợp.</p>
               <p>Step này trả lời các câu hỏi chính:</p>
               <ul>
-                <li>Khách hàng muốn vay bao nhiêu?</li>
-                <li>Tài sản bảo đảm có giá trị bao nhiêu?</li>
-                <li>Tỷ lệ vay trên giá trị tài sản là bao nhiêu?</li>
-                <li>Mục đích vay là gì?</li>
-                <li>Khách hàng muốn loại lãi suất và hình thức trả nợ nào?</li>
-                <li>Có yêu cầu tính năng đặc biệt nào cho khoản vay không?</li>
+                <li>Khách hàng muốn vay bao nhiêu và tài sản có giá trị bao nhiêu?</li>
+                <li>Mục đích vay là gì? Loại lãi suất và hình thức trả nợ nào?</li>
+                <li>Có yêu cầu tính năng đặc biệt nào không?</li>
                 <li>Broker muốn đi theo luồng <strong>Quick Conditional</strong> hay <strong>Full Application</strong>?</li>
               </ul>
             </section>
 
             <section class="section-card">
-              <h2>1.2. Vai trò của Step Solution trong luồng Application</h2>
+              <h2>Thông tin khoản vay</h2>
               <div class="table-wrap">
                 <table>
                   <thead>
                     <tr>
-                      <th>Nội dung</th>
-                      <th>Mô tả</th>
+                      <th>Keyword</th>
+                      <th>Tên tiếng Việt</th>
+                      <th>Ý nghĩa</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr><td>Vị trí trong luồng</td><td>Bước đầu tiên của Application</td></tr>
-                    <tr><td>Tên màn hình</td><td>Confirm loan features</td></tr>
-                    <tr><td>Vai trò chính</td><td>Xác nhận thông tin khoản vay và chọn Solution phù hợp</td></tr>
-                    <tr><td>Kết quả mong muốn</td><td>Hệ thống chọn được Solution để hồ sơ đi tiếp</td></tr>
-                    <tr><td>Bước sau</td><td>Security - Details of the property</td></tr>
+                    <tr><td><strong>Solution</strong></td><td>Giải pháp vay / sản phẩm vay</td><td>Sản phẩm hoặc phương án vay phù hợp với hồ sơ khách hàng.</td></tr>
+                    <tr><td><strong>Loan amount</strong></td><td>Số tiền vay</td><td>Số tiền khách hàng muốn vay từ lender.</td></tr>
+                    <tr><td><strong>Max loan amount</strong></td><td>Số tiền vay tối đa</td><td>Giới hạn số tiền vay tối đa mà lender cho phép.</td></tr>
+                    <tr><td><strong>Estimated value of Property</strong></td><td>Giá trị ước tính của tài sản</td><td>Giá trị dự kiến của property dùng để đánh giá khoản vay.</td></tr>
+                    <tr><td><strong>LVR</strong></td><td>Tỷ lệ vay trên giá trị tài sản</td><td>Loan to Value Ratio, tỷ lệ giữa số tiền vay và giá trị property.</td></tr>
+                    <tr><td><strong>Max LVR</strong></td><td>LVR tối đa</td><td>Mức LVR cao nhất mà lender chấp nhận.</td></tr>
+                    <tr><td><strong>Primary loan purpose</strong></td><td>Mục đích vay chính</td><td>Lý do chính của khoản vay.</td></tr>
+                    <tr><td><strong>Purchase Investment</strong></td><td>Mua bất động sản đầu tư</td><td>Khoản vay dùng để mua property với mục đích đầu tư.</td></tr>
+                    <tr><td><strong>Loan term</strong></td><td>Thời hạn vay</td><td>Thời gian khách hàng vay tiền, thường tính bằng năm.</td></tr>
+                    <tr><td><strong>Rate type</strong></td><td>Loại lãi suất</td><td>Cách áp dụng lãi suất cho khoản vay.</td></tr>
+                    <tr><td><strong>Variable</strong></td><td>Lãi suất biến động</td><td>Lãi suất có thể thay đổi theo thị trường hoặc chính sách lender.</td></tr>
+                    <tr><td><strong>Repayment type</strong></td><td>Hình thức trả nợ</td><td>Cách khách hàng trả khoản vay.</td></tr>
+                    <tr><td><strong>Principal &amp; Interest</strong></td><td>Trả gốc và lãi</td><td>Hình thức trả cả tiền gốc và tiền lãi trong mỗi kỳ thanh toán.</td></tr>
+                    <tr><td><strong>Rate</strong></td><td>Lãi suất</td><td>Mức lãi suất áp dụng cho sản phẩm vay đã chọn.</td></tr>
                   </tbody>
                 </table>
               </div>
             </section>
 
             <section class="section-card">
-              <h2>1.3. Danh sách field trong Step Solution</h2>
+              <h2>Tính năng và điều kiện khoản vay</h2>
               <div class="table-wrap">
                 <table>
                   <thead>
                     <tr>
-                      <th>Field / Keyword</th>
-                      <th>Loại field</th>
-                      <th>Ý nghĩa nghiệp vụ</th>
-                      <th>Ảnh hưởng đến Application</th>
-                      <th>Ghi chú</th>
+                      <th>Keyword</th>
+                      <th>Tên tiếng Việt</th>
+                      <th>Ý nghĩa</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr><td>Security document</td><td>Upload / Dropdown</td><td>Tài liệu liên quan đến tài sản bảo đảm.</td><td>Nếu upload tài liệu, hệ thống hoặc broker có thể lấy thông tin từ tài liệu thay vì nhập tay.</td><td>Có thể chọn nhập thủ công nếu không upload.</td></tr>
-                    <tr><td>Enter details manually</td><td>Dropdown option</td><td>Chọn nhập thông tin bằng tay.</td><td>Broker phải tự nhập các thông tin liên quan đến khoản vay và tài sản.</td><td>Dùng khi không có tài liệu upload.</td></tr>
-                    <tr><td>Search address</td><td>Text / Address search</td><td>Địa chỉ tài sản bảo đảm.</td><td>Dùng để kiểm tra khu vực lender có hỗ trợ cho vay hay không.</td><td>Có thể liên quan đến suburb, state, postcode.</td></tr>
-                    <tr><td>TBA</td><td>Checkbox</td><td>Viết tắt của “To Be Advised”, nghĩa là tài sản chưa xác định đầy đủ.</td><td>Nếu property là TBA, hệ thống cần tối thiểu suburb, state và postcode để kiểm tra khu vực.</td><td>Thường dùng khi chưa có địa chỉ chính xác.</td></tr>
-                    <tr><td>Suburb</td><td>Text</td><td>Khu vực / vùng ngoại ô của tài sản.</td><td>Ảnh hưởng đến việc kiểm tra lender có cho vay ở khu vực đó không.</td><td>Bắt buộc nếu property là TBA.</td></tr>
-                    <tr><td>State</td><td>Text / Select</td><td>Bang nơi tài sản tọa lạc.</td><td>Một số policy cho vay có thể khác nhau theo từng bang.</td><td>Bắt buộc nếu property là TBA.</td></tr>
-                    <tr><td>Postcode</td><td>Text</td><td>Mã bưu chính của tài sản.</td><td>Dùng để kiểm tra vùng rủi ro hoặc vùng lender không hỗ trợ.</td><td>Bắt buộc nếu property là TBA.</td></tr>
-                    <tr><td>Loan amount</td><td>Currency input</td><td>Số tiền khách hàng muốn vay.</td><td>Là dữ liệu chính để tính LVR và kiểm tra hạn mức vay.</td><td>Field quan trọng, thường bắt buộc.</td></tr>
-                    <tr><td>Max loan amount</td><td>System note</td><td>Số tiền vay tối đa hệ thống hoặc lender cho phép.</td><td>Nếu Loan amount vượt mức này, hồ sơ có thể không hợp lệ.</td><td>Do hệ thống tính hoặc policy quy định.</td></tr>
-                    <tr><td>Estimated value of Property</td><td>Currency input</td><td>Giá trị ước tính của tài sản bảo đảm.</td><td>Dùng để tính LVR và đánh giá mức độ an toàn của khoản vay.</td><td>Có thể được thay thế bởi valuation chính thức ở bước sau.</td></tr>
-                    <tr><td>LVR</td><td>Percentage input / Calculated field</td><td>Loan to Value Ratio, tỷ lệ khoản vay trên giá trị tài sản.</td><td>Là chỉ số quan trọng để kiểm tra rủi ro khoản vay.</td><td>Công thức thường là Loan amount / Property value.</td></tr>
-                    <tr><td>Max LVR</td><td>System note</td><td>Tỷ lệ LVR tối đa lender cho phép.</td><td>Nếu LVR vượt Max LVR, Solution có thể không hợp lệ.</td><td>Policy phụ thuộc lender / product.</td></tr>
-                    <tr><td>Primary loan purpose</td><td>Dropdown</td><td>Mục đích chính của khoản vay.</td><td>Ảnh hưởng đến loại product, policy, pricing và yêu cầu hồ sơ.</td><td>Ví dụ: Purchase Investment.</td></tr>
-                    <tr><td>Purchase Investment</td><td>Dropdown value</td><td>Vay để mua bất động sản đầu tư.</td><td>Lender sẽ áp dụng policy dành cho investment loan.</td><td>Không phải owner occupied loan.</td></tr>
-                    <tr><td>Loan term</td><td>Number input</td><td>Thời hạn vay, thường tính bằng năm.</td><td>Ảnh hưởng đến repayment, serviceability và tổng chi phí vay.</td><td>Thường là field bắt buộc.</td></tr>
-                    <tr><td>Rate type</td><td>Dropdown</td><td>Loại lãi suất của khoản vay.</td><td>Dùng để lọc Solution phù hợp.</td><td>Ví dụ: Variable hoặc Fixed.</td></tr>
-                    <tr><td>Variable</td><td>Dropdown value</td><td>Lãi suất biến động.</td><td>Repayment có thể thay đổi theo lãi suất thị trường hoặc lender.</td><td>Cần giải thích rõ cho client.</td></tr>
-                    <tr><td>Repayment type</td><td>Dropdown</td><td>Hình thức trả nợ.</td><td>Ảnh hưởng đến cash flow và serviceability.</td><td>Ví dụ: Principal & Interest.</td></tr>
-                    <tr><td>Principal & Interest</td><td>Dropdown value</td><td>Trả cả gốc và lãi.</td><td>Dư nợ giảm dần theo thời gian, thường được lender đánh giá ổn định hơn.</td><td>Khác với Interest Only.</td></tr>
-                    <tr><td>Loan features</td><td>Button group / Multi select</td><td>Các tính năng mong muốn của khoản vay.</td><td>Dùng để lọc các Solution phù hợp với nhu cầu client.</td><td>Có thể chọn nhiều tính năng.</td></tr>
-                    <tr><td>Offset</td><td>Loan feature</td><td>Tài khoản offset liên kết khoản vay.</td><td>Có thể giúp giảm tiền lãi phải trả nếu client có tiền trong offset account.</td><td>Tính năng phổ biến trong mortgage.</td></tr>
-                    <tr><td>Commercial</td><td>Loan feature</td><td>Gắn với đặc điểm vay hoặc tài sản thương mại.</td><td>Có thể làm hồ sơ đi theo policy commercial thay vì residential.</td><td>Cần kiểm tra lại nếu tài sản là commercial.</td></tr>
-                    <tr><td>NDIS</td><td>Loan feature</td><td>Liên quan đến tài sản hoặc thu nhập có yếu tố NDIS.</td><td>Có thể yêu cầu lender có policy riêng hỗ trợ loại hồ sơ này.</td><td>NDIS thường có yêu cầu đánh giá riêng.</td></tr>
-                    <tr><td>No clawback</td><td>Loan feature</td><td>Điều kiện không clawback.</td><td>Thường liên quan đến commission hoặc điều kiện sản phẩm, không trực tiếp là thông tin tài chính của client.</td><td>Chủ yếu liên quan đến broker / product.</td></tr>
-                    <tr><td>SMSF accountant declaration</td><td>Loan feature</td><td>Xác nhận hoặc declaration từ accountant cho hồ sơ SMSF.</td><td>Có thể là điều kiện quan trọng trong SMSF loan.</td><td>Thường cần khi vay qua SMSF.</td></tr>
-                    <tr><td>Select available Solutions here</td><td>Button</td><td>Yêu cầu hệ thống tìm các Solution khả dụng.</td><td>Sau khi nhập đủ thông tin, broker bấm để hệ thống trả về danh sách Solution.</td><td>Không nên bấm khi thiếu field chính.</td></tr>
-                    <tr><td>Selected solution</td><td>Result / Confirmation</td><td>Solution đang được chọn để đi tiếp.</td><td>Solution này quyết định policy, rate và yêu cầu hồ sơ ở các bước sau.</td><td>Cần kiểm tra đúng trước khi proceed.</td></tr>
-                    <tr><td>Ezy SMSF</td><td>Solution name</td><td>Tên Solution / product được chọn.</td><td>Cho biết hồ sơ đang đi theo product SMSF cụ thể.</td><td>Tên có thể thay đổi theo product.</td></tr>
-                    <tr><td>Rate</td><td>Number input / Display</td><td>Lãi suất của Solution đã chọn.</td><td>Ảnh hưởng đến repayment và serviceability.</td><td>Cần khớp với product đang chọn.</td></tr>
-                    <tr><td>Reset</td><td>Button</td><td>Xóa hoặc đặt lại Solution đã chọn.</td><td>Cho phép broker chọn lại nếu thông tin hoặc Solution chưa đúng.</td><td>Dùng khi cần sửa lựa chọn.</td></tr>
-                    <tr><td>Quick Conditional</td><td>Option</td><td>Luồng lấy conditional approval nhanh.</td><td>Hệ thống chỉ cần thông tin tối thiểu để kiểm tra sơ bộ.</td><td>Vẫn cần bổ sung thông tin để formal approval.</td></tr>
-                    <tr><td>Full Application</td><td>Option</td><td>Luồng nhập đầy đủ hồ sơ.</td><td>Broker phải hoàn thiện nhiều thông tin hơn để đi tới xét duyệt đầy đủ.</td><td>Phù hợp khi muốn submit hồ sơ hoàn chỉnh.</td></tr>
-                    <tr><td>Conditional</td><td>Status / Note</td><td>Chấp thuận có điều kiện.</td><td>Không phải approval cuối cùng; vẫn cần đáp ứng điều kiện và cung cấp tài liệu.</td><td>Dùng cho đánh giá sơ bộ.</td></tr>
-                    <tr><td>Serviceability</td><td>Business concept</td><td>Khả năng trả nợ của borrower / SMSF.</td><td>Là yếu tố chính để lender đánh giá hồ sơ có đủ khả năng vay không.</td><td>Bị ảnh hưởng bởi income, debts, rent, repayment.</td></tr>
-                    <tr><td>Formal approval</td><td>Status</td><td>Phê duyệt chính thức.</td><td>Chỉ đạt được khi hồ sơ đầy đủ và đáp ứng policy.</td><td>Sau conditional approval nếu đủ điều kiện.</td></tr>
-                    <tr><td>Broker loan summary notes</td><td>Textarea</td><td>Ghi chú nội bộ của broker về khoản vay.</td><td>Giúp lưu lại bối cảnh, lưu ý xử lý hoặc thông tin cần review sau.</td><td>Không nên nhập thông tin mơ hồ hoặc sai lệch.</td></tr>
-                    <tr><td>Save for later</td><td>Button</td><td>Lưu hồ sơ để xử lý sau.</td><td>Dữ liệu được giữ lại nhưng Application chưa đi tiếp.</td><td>Dùng khi chưa đủ thông tin.</td></tr>
-                    <tr><td>Proceed</td><td>Button</td><td>Tiếp tục sang bước tiếp theo.</td><td>Chỉ nên bấm khi thông tin Solution đã đủ và chính xác.</td><td>Có thể bị khóa nếu thiếu field bắt buộc.</td></tr>
+                    <tr><td><strong>Loan features</strong></td><td>Tính năng khoản vay</td><td>Các đặc điểm bổ sung của khoản vay.</td></tr>
+                    <tr><td><strong>Offset</strong></td><td>Tài khoản offset</td><td>Tài khoản liên kết khoản vay, có thể giúp giảm tiền lãi phải trả.</td></tr>
+                    <tr><td><strong>Commercial</strong></td><td>Thương mại</td><td>Yếu tố liên quan đến khoản vay hoặc property thương mại.</td></tr>
+                    <tr><td><strong>NDIS</strong></td><td>Chương trình NDIS</td><td>Yếu tố liên quan đến National Disability Insurance Scheme.</td></tr>
+                    <tr><td><strong>No clawback</strong></td><td>Không clawback</td><td>Điều kiện không thu hồi lại khoản đã trả, thường liên quan đến product hoặc broker commission.</td></tr>
+                    <tr><td><strong>SMSF accountant declaration</strong></td><td>Xác nhận của accountant cho SMSF</td><td>Xác nhận từ accountant liên quan đến hồ sơ vay qua SMSF.</td></tr>
+                    <tr><td><strong>Quick Conditional</strong></td><td>Duyệt điều kiện nhanh</td><td>Luồng đánh giá sơ bộ để lấy kết quả conditional approval.</td></tr>
+                    <tr><td><strong>Full Application</strong></td><td>Hồ sơ đầy đủ</td><td>Luồng hoàn thiện đầy đủ thông tin để xét duyệt chính thức.</td></tr>
+                    <tr><td><strong>Conditional</strong></td><td>Chấp thuận có điều kiện</td><td>Trạng thái hồ sơ được chấp thuận sơ bộ nhưng vẫn cần đáp ứng thêm điều kiện.</td></tr>
+                    <tr><td><strong>Formal approval</strong></td><td>Phê duyệt chính thức</td><td>Trạng thái hồ sơ được lender chấp thuận sau khi kiểm tra đầy đủ.</td></tr>
+                    <tr><td><strong>Serviceability</strong></td><td>Khả năng trả nợ</td><td>Khả năng khách hàng hoặc SMSF có thể trả khoản vay.</td></tr>
                   </tbody>
                 </table>
               </div>
             </section>
 
             <section class="section-card">
-              <h2>1.4. Field có khả năng bắt buộc trong Step Solution</h2>
+              <h2>Tài sản liên quan đến khoản vay</h2>
               <div class="table-wrap">
                 <table>
                   <thead>
                     <tr>
-                      <th>Nhóm thông tin</th>
-                      <th>Field có thể bắt buộc</th>
-                      <th>Lý do</th>
+                      <th>Keyword</th>
+                      <th>Tên tiếng Việt</th>
+                      <th>Ý nghĩa</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr><td>Thông tin tài sản</td><td>Search address hoặc Suburb / State / Postcode nếu TBA</td><td>Hệ thống cần kiểm tra lender có cho vay ở khu vực đó không.</td></tr>
-                    <tr><td>Thông tin khoản vay</td><td>Loan amount</td><td>Cần để tính hạn mức vay và LVR.</td></tr>
-                    <tr><td>Giá trị tài sản</td><td>Estimated value of Property</td><td>Cần để tính LVR.</td></tr>
-                    <tr><td>Tỷ lệ vay</td><td>LVR</td><td>Dùng để kiểm tra có vượt Max LVR không.</td></tr>
-                    <tr><td>Mục đích vay</td><td>Primary loan purpose</td><td>Dùng để chọn đúng policy và product.</td></tr>
-                    <tr><td>Thời hạn vay</td><td>Loan term</td><td>Dùng để tính repayment và serviceability.</td></tr>
-                    <tr><td>Loại lãi suất</td><td>Rate type</td><td>Dùng để lọc Solution phù hợp.</td></tr>
-                    <tr><td>Hình thức trả nợ</td><td>Repayment type</td><td>Ảnh hưởng đến repayment và serviceability.</td></tr>
-                    <tr><td>Solution</td><td>Selected solution</td><td>Phải có Solution hợp lệ trước khi đi tiếp.</td></tr>
-                    <tr><td>Luồng xử lý</td><td>Quick Conditional hoặc Full Application</td><td>Hệ thống cần biết broker muốn đi theo hướng nào.</td></tr>
+                    <tr><td><strong>Security document</strong></td><td>Tài liệu tài sản bảo đảm</td><td>Tài liệu liên quan đến property dùng làm bảo đảm cho khoản vay.</td></tr>
+                    <tr><td><strong>Property address</strong></td><td>Địa chỉ tài sản</td><td>Địa chỉ của property dùng làm security.</td></tr>
+                    <tr><td><strong>TBA</strong></td><td>Chưa xác định đầy đủ</td><td>Property chưa có địa chỉ chính xác tại thời điểm nhập hồ sơ.</td></tr>
+                    <tr><td><strong>Suburb</strong></td><td>Khu vực / vùng ngoại ô</td><td>Khu vực nơi property tọa lạc.</td></tr>
+                    <tr><td><strong>State</strong></td><td>Bang</td><td>Bang nơi property tọa lạc.</td></tr>
+                    <tr><td><strong>Postcode</strong></td><td>Mã bưu chính</td><td>Mã khu vực dùng để kiểm tra policy cho vay theo địa bàn.</td></tr>
                   </tbody>
                 </table>
               </div>
@@ -165,7 +139,7 @@
       </div>
 
       <footer class="site-footer">
-        Step 1 nội dung đã được cập nhật từ Solution_and_Security.md.
+        Step 1 đã được xây dựng dựa trên file <strong>Solution_and_Security.md</strong>.
       </footer>
     </div>
   </body>
