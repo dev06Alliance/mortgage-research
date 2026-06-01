@@ -163,7 +163,8 @@ a:hover {
 }
 
 .sidebar-list a:hover,
-.sidebar-list a:focus-visible {
+.sidebar-list a:focus-visible,
+.sidebar-list a.active {
   background: var(--color-primary-active);
   border-color: var(--color-primary);
 }
@@ -171,6 +172,39 @@ a:hover {
 .content {
   display: grid;
   gap: 24px;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 24px 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid #e5e8e2;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 14px 16px;
+  border-bottom: 1px solid #e5e8e2;
+}
+
+th {
+  background: #f8fbf5;
+  color: var(--color-ink);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.table-wrap {
+  overflow-x: auto;
 }
 
 .hero-card {
