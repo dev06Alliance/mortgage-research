@@ -191,6 +191,17 @@ td {
   border-bottom: 1px solid #e5e8e2;
 }
 
+td strong {
+  cursor: pointer;
+  border-bottom: 1px dashed var(--color-ink-deep);
+  color: var(--color-ink-deep);
+}
+
+td strong:hover {
+  color: var(--color-positive);
+  border-bottom-color: var(--color-positive);
+}
+
 th {
   background: #f8fbf5;
   color: var(--color-ink);
