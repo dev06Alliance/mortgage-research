@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Step 6. Loan Summary</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="brand">
+          <mark>SM</mark>
+          <div class="brand-title">
+            <p class="eyebrow">Step 6</p>
+            <h1>Loan Summary — Review the application</h1>
+          </div>
+        </div>
+        <div class="badge">Built from step 6 content</div>
+      </header>
+
+      <div class="page-layout">
+        <aside class="sidebar">
+          <div class="sidebar-card">
+            <h2>Steps</h2>
+            <nav>
+              <ul class="sidebar-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="step-1-solution.html">Step 1. Solution</a></li>
+                <li><a href="step-2-security.html">Step 2. Security</a></li>
+                <li><a href="step-3-smsf-details.html">Step 3. SMSF Details</a></li>
+                <li><a href="step-4-income.html">Step 4. Income</a></li>
+                <li><a href="step-5-financial-position.html">Step 5. Financial Position</a></li>
+                <li><a class="active" href="step-6-loan-summary.html">Step 6. Loan Summary</a></li>
+              </ul>
+            </nav>
+          </div>
+        </aside>
+
+        <section class="content">
+          <article class="content-card">
+            <h2>Step 6: Loan Summary — Review the application</h2>
+
+            <section class="section-card">
+              <h2>Mục đích</h2>
+              <p>Phần này dùng để rà soát toàn bộ hồ sơ trước khi chuyển sang bước tiếp theo. Nó tổng hợp thông tin borrower, security, income, financial position và loan details.</p>
+              <p>Nếu còn cảnh báo hoặc thiếu chứng từ, broker cần cập nhật trước khi tiếp tục.</p>
+            </section>
+
+            <section class="section-card">
+              <h2>Review &amp; warnings</h2>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Keyword</th>
+                      <th>Ý nghĩa</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td><strong>Loan Summary</strong></td><td>Phần tổng hợp thông tin khoản vay và hồ sơ trước khi tiếp tục.</td></tr>
+                    <tr><td><strong>Review the application</strong></td><td>Bước kiểm tra lại thông tin đã nhập trong application.</td></tr>
+                    <tr><td><strong>Warning</strong></td><td>Thông báo cho biết hồ sơ còn lỗi hoặc thiếu thông tin bắt buộc.</td></tr>
+                    <tr><td><strong>Missing information required</strong></td><td>Các trường hoặc tài liệu cần bổ sung trước khi hồ sơ có thể tiếp tục.</td></tr>
+                    <tr><td><strong>Security warning</strong></td><td>Lỗi hoặc thiếu chứng từ liên quan đến security property.</td></tr>
+                    <tr><td><strong>Financial Position warning</strong></td><td>Lỗi hoặc thiếu chứng từ trong phần tài sản, nợ hoặc chi phí.</td></tr>
+                    <tr><td><strong>Evidence of rental income required</strong></td><td>Cần upload tài liệu chứng minh rental income hoặc rental estimate.</td></tr>
+                    <tr><td><strong>PDF upload required</strong></td><td>Cần upload file PDF làm chứng từ hỗ trợ.</td></tr>
+                    <tr><td><strong>Please update</strong></td><td>Yêu cầu quay lại mục tương ứng để sửa hoặc bổ sung dữ liệu.</td></tr>
+                    <tr><td><strong>Next</strong></td><td>Nút chuyển sang bước kế tiếp sau khi hồ sơ hợp lệ.</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="section-card">
+              <h2>Borrower / SMSF details</h2>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Keyword</th>
+                      <th>Ý nghĩa</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td><strong>SMSF name</strong></td><td>Tên chính thức của quỹ self-managed super fund.</td></tr>
+                    <tr><td><strong>SMSF ABN</strong></td><td>Australian Business Number của SMSF.</td></tr>
+                    <tr><td><strong>Date established</strong></td><td>Ngày SMSF được thành lập.</td></tr>
+                    <tr><td><strong>Status / Active</strong></td><td>Tình trạng hoạt động/đăng ký của entity.</td></tr>
+                    <tr><td><strong>SMSF trading address</strong></td><td>Địa chỉ hoạt động hoặc địa chỉ giao dịch của SMSF.</td></tr>
+                    <tr><td><strong>SMSF trustee name</strong></td><td>Tên cá nhân/công ty chịu trách nhiệm quản lý SMSF.</td></tr>
+                    <tr><td><strong>SMSF trustee ACN</strong></td><td>Australian Company Number của công ty trustee.</td></tr>
+                    <tr><td><strong>Registration date</strong></td><td>Ngày company/entity được đăng ký.</td></tr>
+                    <tr><td><strong>SMSF trustee registered office address</strong></td><td>Địa chỉ registered office của công ty trustee.</td></tr>
+                    <tr><td><strong>SMSF trustee postal address</strong></td><td>Địa chỉ nhận thư của SMSF trustee.</td></tr>
+                    <tr><td><strong>Property trustee name</strong></td><td>Tên entity giữ legal title của property trong cấu trúc SMSF loan.</td></tr>
+                    <tr><td><strong>Property trust name</strong></td><td>Tên trust/bare trust liên quan đến property.</td></tr>
+                    <tr><td><strong>Property trustee ACN</strong></td><td>Australian Company Number của công ty property trustee.</td></tr>
+                    <tr><td><strong>Property trustee trading address</strong></td><td>Địa chỉ hoạt động/giao dịch của property trustee.</td></tr>
+                    <tr><td><strong>Property trustee registered office address</strong></td><td>Địa chỉ registered office của property trustee.</td></tr>
+                    <tr><td><strong>Property trustee postal address</strong></td><td>Địa chỉ nhận thư của property trustee.</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="section-card">
+              <h2>Member details</h2>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Keyword</th>
+                      <th>Ý nghĩa</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td><strong>Member Full name</strong></td><td>Tên đầy đủ của thành viên SMSF.</td></tr>
+                    <tr><td><strong>Director of the fund</strong></td><td>Cho biết member có vai trò director liên quan đến SMSF/trustee hay không.</td></tr>
+                    <tr><td><strong>% shareholder</strong></td><td>Tỷ lệ sở hữu cổ phần nếu member là shareholder của company trustee.</td></tr>
+                    <tr><td><strong>Marital status</strong></td><td>Tình trạng hôn nhân của member.</td></tr>
+                    <tr><td><strong>Date of birth</strong></td><td>Ngày sinh của member.</td></tr>
+                    <tr><td><strong>Citizenship</strong></td><td>Tình trạng quốc tịch/cư trú của member.</td></tr>
+                    <tr><td><strong>Residential address</strong></td><td>Địa chỉ nhà ở hiện tại của member.</td></tr>
+                    <tr><td><strong>Status at this address</strong></td><td>Cho biết member đang sở hữu, thuê hoặc sống theo hình thức khác tại địa chỉ hiện tại.</td></tr>
+                    <tr><td><strong>At this address</strong></td><td>Khoảng thời gian member đã sống tại địa chỉ hiện tại.</td></tr>
+                    <tr><td><strong>Email</strong></td><td>Địa chỉ email liên hệ.</td></tr>
+                    <tr><td><strong>Mobile</strong></td><td>Số điện thoại di động liên hệ.</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="section-card">
+              <h2>Security details</h2>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Keyword</th>
+                      <th>Ý nghĩa</th>
+                      <th>Chứng từ</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td><strong>Security address</strong></td><td>Địa chỉ property được dùng làm security.</td><td></td></tr>
+                    <tr><td><strong>Estimated value of property</strong></td><td>Giá trị thị trường ước tính của property.</td><td></td></tr>
+                    <tr><td><strong>Estimated weekly rent</strong></td><td>Rental income dự kiến theo tuần.</td><td></td></tr>
+                    <tr><td><strong>Contact for valuation</strong></td><td>Người lender/valuer có thể liên hệ để sắp xếp valuation.</td><td></td></tr>
+                    <tr><td><strong>Finance date</strong></td><td>Ngày liên quan đến điều kiện finance hoặc phê duyệt tài chính.</td><td></td></tr>
+                    <tr><td><strong>Settlement date</strong></td><td>Ngày hoàn tất giao dịch/giải ngân/chuyển nhượng.</td><td></td></tr>
+                    <tr><td><strong>Property less than 50sqm</strong></td><td>Cho biết property có diện tích dưới 50m² hay không.</td><td></td></tr>
+                    <tr><td><strong>Rental income evidence</strong></td><td>Tài liệu chứng minh tiền thuê hoặc rental estimate.</td><td>Lease agreement, Rental statement, Rental appraisal</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="section-card">
+              <h2>Income details</h2>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Keyword</th>
+                      <th>Ý nghĩa</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td><strong>Paid as</strong></td><td>Loại thu nhập hoặc tình trạng tạo thu nhập được chọn trong hệ thống.</td></tr>
+                    <tr><td><strong>Home duties</strong></td><td>Tình trạng không làm việc hưởng lương, chủ yếu làm việc gia đình.</td></tr>
+                    <tr><td><strong>Retired</strong></td><td>Tình trạng đã nghỉ hưu.</td></tr>
+                    <tr><td><strong>Other</strong></td><td>Loại thu nhập/tình trạng khác ngoài các lựa chọn chính.</td></tr>
+                    <tr><td><strong>This year's super contribution</strong></td><td>Số tiền đã hoặc dự kiến đóng vào super/SMSF trong năm hiện tại.</td></tr>
+                    <tr><td><strong>Super contribution</strong></td><td>Khoản tiền đóng vào quỹ super/SMSF.</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="section-card">
+              <h2>Loan details</h2>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Keyword</th>
+                      <th>Ý nghĩa</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td><strong>Solution name</strong></td><td>Tên sản phẩm vay được chọn trong hệ thống. Ví dụ: Ezy SMSF.</td></tr>
+                    <tr><td><strong>Loan amount</strong></td><td>Số tiền borrower/SMSF muốn vay.</td></tr>
+                    <tr><td><strong>Purpose</strong></td><td>Lý do vay — ví dụ purchase hoặc refinance.</td></tr>
+                    <tr><td><strong>LVR</strong></td><td>Loan to Value Ratio: số tiền vay chia cho giá trị property.</td></tr>
+                    <tr><td><strong>Term</strong></td><td>Thời hạn vay, ví dụ 30 năm.</td></tr>
+                    <tr><td><strong>Rate type</strong></td><td>Cách lãi suất được áp dụng — Fixed hoặc Variable.</td></tr>
+                    <tr><td><strong>Repayment type</strong></td><td>Cách khoản vay được trả — Principal and Interest hoặc Interest Only.</td></tr>
+                    <tr><td><strong>Interest only term</strong></td><td>Khoảng thời gian borrower chỉ trả lãi, chưa trả gốc.</td></tr>
+                    <tr><td><strong>Offset</strong></td><td>Tài khoản có thể giúp giảm lãi tính trên khoản vay nếu sản phẩm hỗ trợ.</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </article>
+        </section>
+      </div>
+
+      <footer class="site-footer">
+        Bước này giúp đảm bảo toàn bộ hồ sơ được rà soát và chuẩn bị tốt trước khi chuyển sang giai đoạn xử lý tiếp theo.
+      </footer>
+    </div>
+    <script src="search.js"></script>
+    <script src="search.js"></script>
+  </body>
+</html>
