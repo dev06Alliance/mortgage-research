@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Step 3. Who’s on the Loan – SMSF Details</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="brand">
+          <mark>SM</mark>
+          <div class="brand-title">
+            <p class="eyebrow">Step 3</p>
+            <h1>Who’s on the Loan – SMSF Details</h1>
+          </div>
+        </div>
+        <div class="badge">Built from step 3 source</div>
+      </header>
+
+      <div class="page-layout">
+        <aside class="sidebar">
+          <div class="sidebar-card">
+            <h2>Steps</h2>
+            <nav>
+              <ul class="sidebar-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="step-1-solution.html">Step 1. Solution</a></li>
+                <li><a href="step-2-security.html">Step 2. Security</a></li>
+                <li><a class="active" href="step-3-smsf-details.html">Step 3. SMSF Details</a></li>
+              </ul>
+            </nav>
+          </div>
+        </aside>
+
+        <section class="content">
+          <article class="content-card">
+            <h2>Step 3: Who’s on the Loan – SMSF Details</h2>
+            <p><strong>Mục đích của màn hình</strong></p>
+            <p>Màn hình này dùng để nhập và kiểm tra thông tin về <strong>SMSF</strong>, <strong>SMSF Trustee</strong>, <strong>Property/Bare Trust</strong>, <strong>Property Trustee</strong> và <strong>Accountant</strong>.</p>
+            <p>Các thông tin trong màn hình này ảnh hưởng trực tiếp đến <strong>Application</strong> vì hệ thống cần xác định:</p>
+            <ul>
+              <li>Đúng bên vay trong hồ sơ <strong>SMSF loan</strong></li>
+              <li>Đúng cấu trúc pháp lý của khoản vay</li>
+              <li>Các bên liên quan có đang hợp lệ hay không</li>
+              <li>Hồ sơ có đủ thông tin để chuyển sang các bước tiếp theo hay không</li>
+            </ul>
+            <div class="callout">
+              Nếu thiếu các thông tin quan trọng ở màn hình này, <strong>Application</strong> có thể chưa được phép tiếp tục, hoặc có thể cần broker bổ sung thông tin trước khi submit.
+            </div>
+
+            <h3>1. SMSF Trust Deed</h3>
+            <h4>1.1 Do you have a SMSF Trust Deed to upload?</h4>
+            <p><strong>Mục đích:</strong> xác định broker đã upload tài liệu hay chưa.</p>
+            <p><strong>Tại sao quan trọng:</strong></p>
+            <ul>
+              <li>SMSF Trust Deed xác nhận thông tin của <strong>SMSF Fund</strong> và các bên liên quan.</li>
+              <li>Đây là căn cứ để hệ thống kiểm tra và tự động nhập dữ liệu.</li>
+            </ul>
+            <p><strong>Ảnh hưởng đến Application:</strong></p>
+            <ul>
+              <li>Nếu có tài liệu, hệ thống có thể dùng để kiểm tra và tự động điền thông tin.</li>
+              <li>Nếu chưa có hoặc chưa kiểm tra thành công, hồ sơ có thể chưa đủ điều kiện để tiếp tục.</li>
+            </ul>
+
+            <h4>1.2 Please upload the SMSF Trust Deed</h4>
+            <p><strong>Mục đích:</strong> upload file <strong>SMSF Trust Deed</strong>.</p>
+            <p><strong>Tại sao quan trọng:</strong></p>
+            <ul>
+              <li>Đây là bằng chứng để hệ thống xác minh thông tin quỹ.</li>
+              <li>Giúp xác thực dữ liệu SMSF và các bên liên quan.</li>
+            </ul>
+            <p><strong>Ảnh hưởng đến Application:</strong></p>
+            <ul>
+              <li>Tài liệu hợp lệ có thể kích hoạt validation tự động và tự động điền một số field.</li>
+              <li>Nếu không hợp lệ hoặc chưa validate, broker cần upload lại hoặc nhập thủ công.</li>
+            </ul>
+
+            <h3>2. SMSF Fund Details</h3>
+            <p>Nhóm này xác định quỹ <strong>SMSF</strong> tham gia khoản vay.</p>
+
+            <h4>2.1 SMSF ABN</h4>
+            <p><strong>Mục đích:</strong> nhập mã số <strong>ABN</strong> của quỹ.</p>
+            <p><strong>Tại sao quan trọng:</strong> ABN là định danh chính thức của SMSF.</p>
+            <p><strong>Ảnh hưởng đến Application:</strong> nếu thiếu hoặc sai, hệ thống có thể không xác minh được quỹ và hồ sơ có thể bị chặn.</p>
+
+            <h4>2.2 SMSF name</h4>
+            <p><strong>Mục đích:</strong> nhập tên quỹ.</p>
+            <p><strong>Tại sao quan trọng:</strong> tên cần khớp với tài liệu và thông tin liên quan.</p>
+            <p><strong>Ảnh hưởng đến Application:</strong> nếu không khớp với Trust Deed hoặc thông tin khác, hồ sơ có thể bị yêu cầu kiểm tra lại.</p>
+
+            <h4>2.3 Date fund established</h4>
+            <p><strong>Mục đích:</strong> nhập ngày thành lập quỹ.</p>
+            <p><strong>Tại sao quan trọng:</strong> giúp đánh giá lịch sử tồn tại của SMSF.</p>
+            <p><strong>Ảnh hưởng đến Application:</strong> nếu thiếu, hồ sơ có thể chưa hoàn chỉnh.</p>
+
+            <h4>2.4 Status</h4>
+            <p><strong>Mục đích:</strong> xác nhận trạng thái hoạt động của quỹ.</p>
+            <p><strong>Tại sao quan trọng:</strong> quỹ thường cần ở trạng thái <strong>Active</strong>.</p>
+            <p><strong>Ảnh hưởng đến Application:</strong> nếu trạng thái không phù hợp, hồ sơ có thể bị chặn hoặc yêu cầu xác minh lại.</p>
+
+            <h4>2.5 SMSF trading address</h4>
+            <p><strong>Mục đích:</strong> nhập địa chỉ giao dịch của quỹ.</p>
+            <p><strong>Tại sao quan trọng:</strong> địa chỉ dùng để đối chiếu, liên hệ và xác minh hồ sơ.</p>
+            <p><strong>Ảnh hưởng đến Application:</strong> nếu thiếu hoặc không chính xác, broker cần cập nhật trước khi tiếp tục.</p>
+
+            <h3>3. SMSF Trustee Details</h3>
+            <p>Nhóm này xác định bên quản lý <strong>SMSF Fund</strong> và quyền đại diện trong hồ sơ vay.</p>
+
+            <h4>3.1 SMSF trustee ACN</h4>
+            <p><strong>Mục đích:</strong> nhập mã số <strong>ACN</strong> nếu trustee là công ty.</p>
+            <p><strong>Tại sao quan trọng:</strong> ACN giúp xác định chính xác công ty trustee.</p>
+            <p><strong>Ảnh hưởng đến Application:</strong> nếu thiếu hoặc sai, hệ thống có thể không xác minh được công ty trustee.</p>
+
+            <h4>3.2 SMSF trustee name</h4>
+            <p><strong>Mục đích:</strong> nhập tên tổ chức trustee.</p>
+            <p><strong>Tại sao quan trọng:</strong> tên này phải trùng với tài liệu hoặc đăng ký.</p>
+            <p><strong>Ảnh hưởng đến Application:</strong> nếu không khớp, hồ sơ cần chỉnh sửa hoặc kiểm tra lại.</p>
+
+            <h4>3.3 Registration date</h4>
+            <p><strong>Mục đích:</strong> nhập ngày đăng ký của công ty trustee.</p>
+            <p><strong>Tại sao quan trọng:</strong> xác minh thời điểm thành lập pháp lý.</p>
+            <p><strong>Ảnh hưởng đến Application:</strong> nếu thiếu, hồ sơ có thể chưa đủ để hoàn tất phần borrower structure.</p>
+
+            <h4>3.4 Status</h4>
+            <p><strong>Mục đích:</strong> xác nhận trạng thái hoạt động của trustee.</p>
+            <p><strong>Tại sao quan trọng:</strong> thường cần là <strong>Current</strong>.</p>
+            <p><strong>Ảnh hưởng đến Application:</strong> nếu không còn hợp lệ, hồ sơ có thể bị tạm dừng hoặc yêu cầu xác minh.</p>
+
+            <h4>3.5 SMSF trustee registered office address</h4>
+            <p><strong>Mục đích:</strong> nhập địa chỉ văn phòng đăng ký.</p>
+            <p><strong>Tại sao quan trọng:</strong> đây là địa chỉ chính thức của trustee.</p>
+            <p><strong>Ảnh hưởng đến Application:</strong> thường là bắt buộc; nếu thiếu, hồ sơ có thể không tiếp tục.</p>
+
+            <h4>3.6 SMSF trustee postal address</h4>
+            <p><strong>Mục đích:</strong> nhập địa chỉ nhận thư.</p>
+            <p><strong>Tại sao quan trọng:</strong> dùng để liên hệ với trustee.</p>
+            <p><strong>Ảnh hưởng đến Application:</strong> nếu bắt buộc mà thiếu, hồ sơ có thể bị chặn.</p>
+
+            <h3>4. Property / Bare Trust Details</h3>
+            <p>Nhóm này xác định <strong>Property/Bare Trust</strong> trong cấu trúc <strong>SMSF loan</strong>.</p>
+
+            <h4>4.1 Do you have a Property (Bare) Trust Deed to upload?</h4>
+            <p><strong>Mục đích:</strong> xác định broker cung cấp thông tin bằng tài liệu hay nhập thủ công.</p>
+            <p><strong>Tại sao quan trọng:</strong> Property Trust Deed giúp hệ thống kiểm tra cấu trúc trust.</p>
+            <p><strong>Ảnh hưởng đến Application:</strong> nếu upload, hệ thống có thể kiểm tra tài liệu. Nếu nhập thủ công, các trường phải điền đầy đủ.</p>
+
+            <h4>4.2 Property trustee ACN</h4>
+            <p><strong>Mục đích:</strong> nhập mã số <strong>ACN</strong> của <strong>Property Trustee</strong>.</p>
+            <p><strong>Tại sao quan trọng:</strong> ACN là định danh công ty trustee của Property/Bare Trust.</p>
+            <p><strong>Ảnh hưởng đến Application:</strong> nếu thiếu, hệ thống có thể hiển thị cảnh báo và yêu cầu nhập hoặc xác nhận chưa có ABN/ACN.</p>
+
+            <h4>4.3 Tick if ABN/ACN is not yet available during application lodgement</h4>
+            <p><strong>Mục đích:</strong> xác nhận ABN/ACN chưa có tại thời điểm nộp hồ sơ.</p>
+            <p><strong>Tại sao quan trọng:</strong> tránh hiểu nhầm trường bị bỏ trống do thiếu sót.</p>
+            <p><strong>Ảnh hưởng đến Application:</strong> cho phép broker tiếp tục mà chưa cần nhập ngay, nhưng thông tin vẫn cần bổ sung sau.</p>
+
+            <h4>4.4 Property trust name</h4>
+            <p><strong>Mục đích:</strong> nhập tên <strong>Property Trust</strong> hoặc <strong>Bare Trust</strong>.</p>
+            <p><strong>Tại sao quan trọng:</strong> tên trust giúp xác định cấu trúc nắm giữ tài sản.</p>
+            <p><strong>Ảnh hưởng đến Application:</strong> nếu thiếu, phần Property/Bare Trust có thể được coi là chưa hoàn tất.</p>
+
+            <h4>4.5 Date fund established</h4>
+            <p><strong>Mục đích:</strong> nhập ngày thành lập của Property/Bare Trust.</p>
+            <p><strong>Tại sao quan trọng:</strong> xác nhận thời điểm trust được thiết lập.</p>
+            <p><strong>Ảnh hưởng đến Application:</strong> nếu thiếu, hồ sơ có thể cần bổ sung trước khi submit hoặc đánh giá tiếp.</p>
+
+            <h3>5. Accountant Details</h3>
+            <p>Nhóm này lưu thông tin kế toán liên quan đến <strong>SMSF Fund</strong>.</p>
+
+            <h4>5.1 Accountant firm name</h4>
+            <p><strong>Mục đích:</strong> nhập tên công ty kế toán.</p>
+            <p><strong>Tại sao quan trọng:</strong> cho biết đơn vị hỗ trợ SMSF.</p>
+            <p><strong>Ảnh hưởng đến Application:</strong> cần thiết nếu hồ sơ yêu cầu <strong>SMSF accountant declaration</strong> hoặc xác nhận từ kế toán.</p>
+
+            <h4>5.2 Name of accountant</h4>
+            <p><strong>Mục đích:</strong> nhập tên người phụ trách.</p>
+            <p><strong>Tại sao quan trọng:</strong> giúp broker/lender biết ai là người liên hệ.</p>
+            <p><strong>Ảnh hưởng đến Application:</strong> nếu thiếu, quá trình xử lý có thể chậm lại.</p>
+
+            <h4>5.3 Phone no.</h4>
+            <p><strong>Mục đích:</strong> nhập số điện thoại của accountant.</p>
+            <p><strong>Tại sao quan trọng:</strong> dùng để liên hệ trực tiếp.</p>
+            <p><strong>Ảnh hưởng đến Application:</strong> nếu không có số điện thoại, việc xác minh có thể kéo dài.</p>
+
+            <h4>5.4 Office address</h4>
+            <p><strong>Mục đích:</strong> nhập địa chỉ văn phòng của accountant.</p>
+            <p><strong>Tại sao quan trọng:</strong> địa chỉ liên hệ chính thức.</p>
+            <p><strong>Ảnh hưởng đến Application:</strong> có thể dùng trong tài liệu hoặc xác nhận.</p>
+
+            <h4>5.5 Email</h4>
+            <p><strong>Mục đích:</strong> nhập email liên hệ của accountant.</p>
+            <p><strong>Tại sao quan trọng:</strong> dùng để gửi yêu cầu xác nhận hoặc tài liệu.</p>
+            <p><strong>Ảnh hưởng đến Application:</strong> nếu thiếu, broker có thể phải bổ sung trước khi tiếp tục xử lý.</p>
+
+            <h3>6. Broker notes on Personal details</h3>
+            <p><strong>Mục đích:</strong> nhập ghi chú nội bộ của broker.</p>
+            <p><strong>Tại sao quan trọng:</strong> giúp ghi lại bối cảnh và các tình huống cần lưu ý.</p>
+            <ul>
+              <li>Thông tin chờ khách hàng xác nhận</li>
+              <li>Lý do chưa có <strong>ABN/ACN</strong></li>
+              <li>Ghi chú từ <strong>Accountant</strong></li>
+              <li>Ghi chú liên quan đến <strong>SMSF Trustee</strong> hoặc <strong>Property/Bare Trust</strong></li>
+            </ul>
+            <p><strong>Ảnh hưởng đến Application:</strong></p>
+            <ul>
+              <li>Thường không chặn hồ sơ</li>
+              <li>Giúp người xử lý hiểu rõ bối cảnh</li>
+              <li>Giảm nhu cầu hỏi lại thông tin</li>
+              <li>Giúp quá trình xử lý mượt hơn</li>
+            </ul>
+
+            <section class="section-card">
+              <h2>Các field có thể ảnh hưởng đến việc mở bước tiếp theo</h2>
+              <ul>
+                <li><strong>SMSF Trust Deed</strong> (khi broker chọn upload tài liệu)</li>
+                <li>Trạng thái validate của <strong>SMSF Trust Deed</strong></li>
+                <li><strong>SMSF ABN</strong></li>
+                <li><strong>SMSF name</strong></li>
+                <li><strong>SMSF status</strong></li>
+                <li><strong>SMSF trustee ACN</strong></li>
+                <li><strong>SMSF trustee name</strong></li>
+                <li><strong>SMSF trustee status</strong></li>
+                <li><strong>SMSF trustee registered office address</strong></li>
+                <li><strong>SMSF trustee postal address</strong></li>
+                <li><strong>Property trustee ACN</strong></li>
+                <li>Checkbox <strong>ABN/ACN is not yet available during application lodgement</strong></li>
+                <li><strong>Property trust name</strong></li>
+                <li><strong>Date fund established</strong> của <strong>Property/Bare Trust</strong></li>
+              </ul>
+              <div class="callout">
+                Nếu các field này thiếu hoặc chưa hợp lệ, <strong>Application</strong> có thể:
+                <ul>
+                  <li>Không cho chuyển sang bước tiếp theo</li>
+                  <li>Hiển thị warning hoặc error</li>
+                  <li>Yêu cầu broker bổ sung thông tin</li>
+                  <li>Làm chậm quá trình submit hoặc assessment</li>
+                  <li>Gây sai lệch thông tin về borrower structure</li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="section-card">
+              <h2>Tóm tắt</h2>
+              <p>Màn hình <strong>Who’s on the Loan – SMSF Details</strong> là bước quan trọng để xác nhận cấu trúc hồ sơ <strong>SMSF loan</strong>.</p>
+              <p>Thông tin ở bước này ảnh hưởng đến:</p>
+              <ul>
+                <li>Việc xác định đúng bên vay</li>
+                <li>Việc kiểm tra tính hợp lệ của <strong>SMSF Fund</strong></li>
+                <li>Việc kiểm tra <strong>SMSF Trustee</strong></li>
+                <li>Việc xác định <strong>Property/Bare Trust</strong></li>
+                <li>Việc chuẩn bị hồ sơ cho các bước tiếp theo của <strong>Application</strong></li>
+              </ul>
+              <div class="callout">
+                Nếu các thông tin chính thiếu hoặc không hợp lệ, <strong>Application</strong> có thể chưa được tiếp tục cho đến khi broker cập nhật đầy đủ.
+              </div>
+            </section>
+          </article>
+        </section>
+      </div>
+
+      <footer class="site-footer">
+        Step 3 đã được xây dựng dựa trên file <strong>step-3_who-on-the-load.md</strong>.
+      </footer>
+    </div>
+  </body>
+</html>
