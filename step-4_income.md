@@ -1,241 +1,107 @@
 # Step 4: Income – Employment and Income Details
 
-## Mục đích của màn hình
+## Mục đích
 
-Màn hình **Income** dùng để thu thập thông tin về việc làm và nguồn thu nhập của người liên quan đến hồ sơ vay.
+Step này dùng để hiểu **nguồn tiền nào có thể hỗ trợ SMSF loan**.
 
-Trong hồ sơ **SMSF loan**, thông tin thu nhập rất quan trọng vì hệ thống cần đánh giá khả năng đóng góp vào **SMSF** và khả năng đáp ứng nghĩa vụ trả nợ của hồ sơ.
+Trong hồ sơ **SMSF loan**, lender không chỉ quan tâm người liên quan có thu nhập hay không, mà còn cần hiểu:
 
-Nói đơn giản, màn hình này giúp trả lời các câu hỏi:
+* Thu nhập đó đến từ nguồn nào
+* Thu nhập có ổn định không
+* Thu nhập có thể hỗ trợ **SMSF contribution** không
+* **SMSF Fund** có đủ dòng tiền để đáp ứng khoản vay không
+* Hồ sơ có đủ cơ sở để tính **serviceability** không
 
-* Người liên quan đến hồ sơ đang có loại việc làm nào?
-* Thu nhập đến từ nguồn nào?
-* Thu nhập đó có thể dùng để hỗ trợ đánh giá **Application** hay không?
-* Hồ sơ có đủ thông tin để tính **serviceability** hay chưa?
-
----
-
-## 1. All your income details
-
-Đây là khu vực tổng hợp thông tin thu nhập của những người liên quan trong **Application**.
-
-Nếu hồ sơ có nhiều người hoặc nhiều thành viên liên quan đến **SMSF**, hệ thống có thể hiển thị từng người theo từng tab hoặc từng thẻ riêng.
-
-## Ý nghĩa
-
-Khu vực này giúp broker chọn đúng người cần nhập thông tin thu nhập.
-
-## Ảnh hưởng đến Application
-
-Nếu có nhiều người trong hồ sơ nhưng chưa nhập đầy đủ thông tin thu nhập cho từng người cần thiết, **Application** có thể chưa đủ dữ liệu để tiếp tục sang bước sau.
-
-Thông tin ở phần này cũng có thể ảnh hưởng đến việc hệ thống tính toán **serviceability**.
+Nói ngắn gọn, Step 4 giúp hiểu **khả năng tài chính và khả năng đóng góp vào SMSF**.
 
 ---
 
-## 2. SMSF contribution details
+## 1. Nhóm Employment Type
 
-Đây là phần nhập thông tin liên quan đến thu nhập hoặc khả năng đóng góp của người đó vào **SMSF**.
-
-## Ý nghĩa
-
-Trong **SMSF loan**, lender thường cần hiểu nguồn tiền nào sẽ hỗ trợ cho việc đóng góp vào **SMSF** hoặc hỗ trợ khả năng trả nợ của hồ sơ.
-
-Thông tin này giúp xác định thu nhập của người liên quan đến hồ sơ là loại nào, có ổn định hay không, và có thể được dùng trong quá trình đánh giá hay không.
-
-## Ảnh hưởng đến Application
-
-Nếu thông tin **SMSF contribution details** bị thiếu, hệ thống có thể chưa đủ dữ liệu để đánh giá khả năng trả nợ.
-
-Điều này có thể làm **Application**:
-
-* Không cho tiếp tục sang bước tiếp theo
-* Không tính được **serviceability**
-* Cần broker bổ sung thêm thông tin thu nhập
-* Cần thêm tài liệu chứng minh thu nhập ở các bước sau
+| Keyword                  | Hiểu đơn giản là gì?                     | Vì sao quan trọng trong SMSF loan?                                                                   |
+| ------------------------ | ---------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| **PAYG**                 | Thu nhập từ việc làm hưởng lương tại Úc. | Đây là loại thu nhập thường dễ xác minh hơn vì thường có employer, payslip và lịch sử lương rõ ràng. |
+| **Self-employed income** | Thu nhập từ tự kinh doanh hoặc làm chủ.  | Loại thu nhập này thường cần kiểm tra kỹ hơn vì có thể biến động theo hoạt động kinh doanh.          |
+| **Employment type**      | Loại nguồn thu nhập của người liên quan. | Cách đánh giá income sẽ khác nhau tùy người đó là PAYG hay self-employed.                            |
+| **Income source**        | Nguồn tạo ra thu nhập.                   | Lender cần biết tiền đến từ lương, kinh doanh hay nguồn khác để đánh giá khả năng hỗ trợ khoản vay.  |
 
 ---
 
-## 3. What employment type is this person?
+## 2. Nhóm SMSF Contribution
 
-Field này dùng để chọn loại hình việc làm hoặc nguồn thu nhập chính của người đang được nhập thông tin.
-
-Đây là field quan trọng nhất trên màn hình hiện tại.
-
-Nếu chưa chọn field này, hệ thống có thể hiển thị cảnh báo như:
-
-**Please select employment type**
-
-## Ý nghĩa
-
-Field này giúp hệ thống hiểu người đó đang thuộc nhóm thu nhập nào.
-
-Việc chọn đúng **employment type** rất quan trọng vì mỗi loại thu nhập sẽ có cách đánh giá và yêu cầu tài liệu khác nhau.
-
-## Ảnh hưởng đến Application
-
-**Employment type** ảnh hưởng trực tiếp đến:
-
-* Cách hệ thống tính thu nhập
-* Loại giấy tờ cần cung cấp
-* Cách lender đánh giá mức độ ổn định của thu nhập
-* Việc hồ sơ có đủ điều kiện để tiếp tục hay không
-* Kết quả tính **serviceability**
-
-Nếu broker chưa chọn **employment type**, **Application** có thể bị chặn ở bước này và không cho bấm **Continue**.
+| Keyword                                 | Hiểu đơn giản là gì?                        | Vì sao quan trọng trong SMSF loan?                                                  |
+| --------------------------------------- | ------------------------------------------- | ----------------------------------------------------------------------------------- |
+| **SMSF contribution**                   | Khoản tiền được đóng vào SMSF Fund.         | Đây là một trong các nguồn tiền quan trọng giúp SMSF có khả năng phục vụ khoản vay. |
+| **Super contribution**                  | Khoản đóng góp vào quỹ hưu trí.             | Trong ngữ cảnh này, nó giúp lender hiểu tiền có được đưa đều vào SMSF hay không.    |
+| **Annual super contribution**           | Tổng khoản đóng góp vào SMSF trong một năm. | Giúp đánh giá dòng tiền hằng năm đi vào SMSF.                                       |
+| **Estimated annual super contribution** | Khoản đóng góp dự kiến trong năm.           | Dùng để ước tính nguồn tiền tương lai có thể vào SMSF.                              |
+| **Previous year’s super contribution**  | Khoản đóng góp vào SMSF của năm trước.      | Giúp xem lịch sử đóng góp có đều và hợp lý không.                                   |
+| **Additional contribution**             | Khoản đóng góp thêm ngoài mức thông thường. | Có thể tăng nguồn tiền hỗ trợ SMSF loan nếu khoản này đáng tin cậy.                 |
+| **Future contribution**                 | Khoản đóng góp dự kiến trong tương lai.     | Ảnh hưởng đến cách đánh giá dòng tiền sắp tới của SMSF.                             |
 
 ---
 
-## 4. Employed - PAYG
+## 3. Nhóm Income Assessment
 
-Option **Employed - PAYG** dùng khi người đó là nhân viên làm công ăn lương.
-
-Ví dụ: người đó nhận lương định kỳ từ employer.
-
-## Ý nghĩa
-
-Đây là nhóm thu nhập thường đến từ lương, tiền công, hoặc khoản trả định kỳ từ employer.
-
-## Ảnh hưởng đến Application
-
-Nếu chọn **Employed - PAYG**, hệ thống có thể yêu cầu thêm các thông tin như:
-
-* Employer name
-* Employment start date
-* Employment status
-* Occupation
-* Base income
-* Pay frequency
-* Payslip hoặc tài liệu chứng minh thu nhập
-
-Thông tin này thường được dùng để tính **serviceability**.
-
-Nếu thu nhập **PAYG** được nhập đầy đủ và hợp lệ, hồ sơ có thể dễ được đánh giá hơn vì đây thường là loại thu nhập có tính ổn định cao.
-
-Nếu thiếu thông tin hoặc thiếu tài liệu chứng minh, **Application** có thể cần bổ sung trước khi submit hoặc trước khi lender đánh giá.
+| Keyword                 | Hiểu đơn giản là gì?                                          | Vì sao quan trọng trong SMSF loan?                                                                    |
+| ----------------------- | ------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| **Assessable income**   | Phần thu nhập có thể được lender chấp nhận để đánh giá hồ sơ. | Không phải mọi khoản tiền đều được tính vào khả năng vay; lender chỉ tính phần thu nhập đủ điều kiện. |
+| **Income verification** | Việc chứng minh thu nhập là thật và đáng tin cậy.             | Nếu thu nhập không chứng minh được, lender có thể không dùng khoản đó khi đánh giá hồ sơ.             |
+| **Income consistency**  | Mức độ đều đặn của thu nhập qua thời gian.                    | Thu nhập ổn định thường giúp hồ sơ SMSF loan dễ được đánh giá hơn.                                    |
+| **Income history**      | Lịch sử thu nhập trong các kỳ trước.                          | Giúp lender so sánh thu nhập hiện tại với quá khứ để xem có ổn định không.                            |
+| **Business income**     | Thu nhập từ hoạt động kinh doanh.                             | Thường liên quan đến self-employed và có thể cần xem xét kỹ hơn thu nhập PAYG.                        |
 
 ---
 
-## 5. Self employed
+## 4. Nhóm Serviceability
 
-Option **Self employed** dùng khi người đó có thu nhập từ hoạt động kinh doanh hoặc tự làm chủ.
-
-Ví dụ: chủ doanh nghiệp, sole trader, contractor, consultant hoặc người có thu nhập từ business riêng.
-
-## Ý nghĩa
-
-Đây là nhóm thu nhập không đến từ lương cố định của employer mà đến từ hoạt động kinh doanh hoặc tự doanh.
-
-## Ảnh hưởng đến Application
-
-Nếu chọn **Self employed**, hệ thống có thể yêu cầu thêm thông tin như:
-
-* Business name
-* ABN
-* Business start date
-* Business income
-* Tax return
-* Financial statements
-* Accountant details
-
-Thu nhập **Self employed** thường cần được kiểm tra kỹ hơn so với **PAYG** vì mức thu nhập có thể thay đổi theo thời gian.
-
-Điều này có thể ảnh hưởng đến:
-
-* Cách tính **serviceability**
-* Tài liệu cần upload
-* Thời gian xử lý **Application**
-* Việc lender có chấp nhận nguồn thu nhập này hay không
-
-Nếu thông tin kinh doanh hoặc tài liệu thu nhập chưa đầy đủ, hồ sơ có thể bị yêu cầu bổ sung.
+| Keyword                   | Hiểu đơn giản là gì?                            | Vì sao quan trọng trong SMSF loan?                                                                 |
+| ------------------------- | ----------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| **Serviceability**        | Khả năng đáp ứng nghĩa vụ trả nợ của hồ sơ vay. | Đây là một trong những yếu tố quan trọng nhất để lender quyết định hồ sơ có đủ khả năng vay không. |
+| **Servicing**             | Quá trình tính toán serviceability.             | Income và contribution trong step này thường được dùng để chạy servicing.                          |
+| **Contribution capacity** | Khả năng tiếp tục đóng tiền vào SMSF.           | Nếu contribution capacity tốt, SMSF có thêm cơ sở để đáp ứng khoản vay.                            |
+| **Repayment capacity**    | Khả năng hỗ trợ nghĩa vụ trả nợ.                | Giúp lender đánh giá hồ sơ có đủ dòng tiền để chịu khoản vay không.                                |
+| **Cash flow**             | Dòng tiền vào và ra.                            | SMSF loan cần xem SMSF có đủ dòng tiền để duy trì khoản vay hay không.                             |
 
 ---
 
-## 6. Other
+## 5. Nhóm Member Income
 
-Option **Other** dùng khi nguồn thu nhập không thuộc nhóm **Employed - PAYG** hoặc **Self employed**.
-
-## Ý nghĩa
-
-Đây là lựa chọn cho các loại thu nhập đặc biệt hoặc không phổ biến.
-
-Ví dụ có thể bao gồm:
-
-* Pension
-* Investment income
-* Rental income
-* Government benefit
-* Distribution
-* Other contribution source
-
-Tùy theo hệ thống, sau khi chọn **Other**, broker có thể cần nhập thêm chi tiết để giải thích nguồn thu nhập.
-
-## Ảnh hưởng đến Application
-
-Nếu chọn **Other**, lender hoặc hệ thống có thể cần kiểm tra kỹ hơn để xác định nguồn thu nhập đó có được chấp nhận trong **Application** hay không.
-
-Nguồn thu nhập này có thể ảnh hưởng đến:
-
-* Việc thu nhập có được đưa vào **serviceability** hay không
-* Loại tài liệu chứng minh cần cung cấp
-* Việc hồ sơ có cần review thủ công hay không
-* Khả năng hồ sơ bị yêu cầu bổ sung thông tin
-
-Broker nên chọn **Other** khi nguồn thu nhập thật sự không phù hợp với **PAYG** hoặc **Self employed**.
+| Keyword                 | Hiểu đơn giản là gì?                       | Vì sao quan trọng trong SMSF loan?                                             |
+| ----------------------- | ------------------------------------------ | ------------------------------------------------------------------------------ |
+| **SMSF member income**  | Thu nhập của member liên quan đến SMSF.    | Thu nhập của member có thể là cơ sở để đánh giá khả năng đóng góp vào SMSF.    |
+| **Member contribution** | Khoản member đóng vào SMSF.                | Có thể là nguồn tiền quan trọng giúp SMSF phục vụ khoản vay.                   |
+| **Multiple members**    | Hồ sơ có nhiều member liên quan.           | Nếu có nhiều member, lender có thể cần xem income/contribution của từng người. |
+| **Contribution split**  | Cách phân bổ contribution giữa các member. | Giúp hiểu ai đang đóng góp bao nhiêu vào SMSF.                                 |
 
 ---
 
-## 7. Broker notes on Employment and Income details
+## 6. Nhóm Evidence / Supporting Documents
 
-Field này dùng để broker ghi chú nội bộ về thông tin việc làm và thu nhập.
-
-## Ý nghĩa
-
-Broker có thể dùng field này để lưu lại các thông tin cần chú ý, ví dụ:
-
-* Thu nhập đang chờ khách hàng xác nhận
-* Nguồn thu nhập có điểm đặc biệt
-* Tài liệu thu nhập sẽ được bổ sung sau
-* Giải thích lý do chọn **Other**
-* Ghi chú về thay đổi công việc hoặc thay đổi thu nhập
-
-## Ảnh hưởng đến Application
-
-Field này thường không trực tiếp chặn hồ sơ.
-
-Tuy nhiên, ghi chú rõ ràng có thể giúp người xử lý hồ sơ hiểu bối cảnh tốt hơn và giảm việc phải hỏi lại broker hoặc khách hàng.
-
-Nếu hồ sơ có nguồn thu nhập phức tạp, phần ghi chú này có thể hỗ trợ quá trình assessment.
+| Keyword                  | Hiểu đơn giản là gì?               | Vì sao quan trọng trong SMSF loan?                                                |
+| ------------------------ | ---------------------------------- | --------------------------------------------------------------------------------- |
+| **Payslip**              | Chứng từ lương của người làm PAYG. | Thường dùng để chứng minh thu nhập PAYG.                                          |
+| **Tax Return**           | Hồ sơ khai thuế.                   | Thường dùng để chứng minh thu nhập, đặc biệt với self-employed.                   |
+| **Financial Statements** | Báo cáo tài chính của business.    | Có thể cần khi đánh giá business income.                                          |
+| **Notice of Assessment** | Thông báo kết quả thuế tại Úc.     | Có thể được dùng để xác nhận thu nhập đã khai báo với cơ quan thuế.               |
+| **Accountant letter**    | Thư xác nhận từ accountant.        | Có thể hỗ trợ giải thích hoặc xác nhận income/contribution trong hồ sơ SMSF loan. |
 
 ---
 
-## Các field có thể ảnh hưởng đến việc mở bước tiếp theo
+## Tóm tắt keyword quan trọng nhất
 
-Ở màn hình hiện tại, field có khả năng ảnh hưởng trực tiếp đến nút **Continue** là:
+Nếu chỉ cần nhớ bộ keyword tối thiểu của Step 4, nên nhớ:
 
-* **Employment type**
-
-Nếu chưa chọn **Employment type**, hệ thống có thể không cho tiếp tục và sẽ yêu cầu broker chọn loại việc làm trước.
-
-Sau khi chọn **Employment type**, hệ thống có thể hiển thị thêm các field chi tiết tùy theo lựa chọn:
-
-* Nếu chọn **Employed - PAYG**, hệ thống có thể yêu cầu thông tin employer và income.
-* Nếu chọn **Self employed**, hệ thống có thể yêu cầu thông tin business và tài liệu tài chính.
-* Nếu chọn **Other**, hệ thống có thể yêu cầu giải thích loại thu nhập và bằng chứng liên quan.
-
----
-
-## Tóm tắt
-
-Step **Income** dùng để thu thập thông tin về việc làm và nguồn thu nhập của người liên quan đến **Application**.
-
-Field quan trọng nhất trên màn hình hiện tại là **Employment type**.
-
-Thông tin ở step này ảnh hưởng trực tiếp đến:
-
-* Việc tính **serviceability**
-* Việc xác định hồ sơ có đủ khả năng trả nợ hay không
-* Loại tài liệu thu nhập cần cung cấp
-* Việc **Application** có thể tiếp tục sang bước sau hay không
-
-Nếu chưa chọn **Employment type** hoặc chưa nhập đủ thông tin thu nhập theo loại đã chọn, **Application** có thể bị chặn hoặc cần bổ sung thông tin trước khi tiếp tục.
+| Keyword                       | Vai trò chính                                            |
+| ----------------------------- | -------------------------------------------------------- |
+| **PAYG**                      | Thu nhập lương, thường dễ xác minh.                      |
+| **Self-employed income**      | Thu nhập tự kinh doanh, thường cần kiểm tra kỹ hơn.      |
+| **SMSF contribution**         | Tiền đóng vào SMSF để hỗ trợ nguồn tiền của quỹ.         |
+| **Annual super contribution** | Mức đóng góp vào SMSF trong một năm.                     |
+| **Additional contribution**   | Khoản đóng góp thêm ngoài mức thông thường.              |
+| **Contribution capacity**     | Khả năng tiếp tục đóng tiền vào SMSF.                    |
+| **Assessable income**         | Thu nhập có thể được lender chấp nhận để đánh giá hồ sơ. |
+| **Income verification**       | Việc chứng minh thu nhập.                                |
+| **Serviceability**            | Khả năng đáp ứng nghĩa vụ trả nợ.                        |
+| **Servicing**                 | Quá trình tính toán khả năng trả nợ.                     |
+| **SMSF member income**        | Thu nhập của member liên quan đến SMSF.                  |

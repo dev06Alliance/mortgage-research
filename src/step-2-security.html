@@ -29,6 +29,7 @@
                 <li><a href="step-1-solution.html">Step 1. Solution</a></li>
                 <li><a class="active" href="step-2-security.html">Step 2. Security</a></li>
                 <li><a href="step-3-smsf-details.html">Step 3. SMSF Details</a></li>
+                <li><a href="step-4-income.html">Step 4. Income</a></li>
                 <li><a href="step-5-financial-position.html">Step 5. Financial Position</a></li>
                 <li><a href="step-6-loan-summary.html">Step 6. Loan Summary</a></li>
               </ul>
@@ -38,19 +39,136 @@
 
         <section class="content">
           <article class="content-card">
-            <h2>Step 2. Security</h2>
-            <p>
-              Nội dung hiện tại để trống. Đây là trang placeholder dành cho phần <strong>Security</strong> của bộ tài liệu.
-            </p>
-            <div class="callout">
-              <strong>Note:</strong> bạn có thể thêm nội dung chi tiết ở đây khi phần Step 2 được xây dựng.
-            </div>
+            <h2>Step 2: Security</h2>
+            <section class="section-card">
+              <h2>2.1. Màn hình: Details of the property</h2>
+              <h3>Mục đích</h3>
+              <p>Step <strong>Security</strong> dùng để thu thập thông tin chi tiết về tài sản bảo đảm cho khoản vay.</p>
+              <p>Trong mortgage, <strong>Security</strong> thường là bất động sản mà lender dùng làm tài sản bảo đảm. Nếu borrower không trả được nợ, lender có quyền xử lý tài sản này theo điều kiện hợp đồng vay.</p>
+              <p>Step này trả lời các câu hỏi chính:</p>
+              <ul>
+                <li>Tài sản bảo đảm nằm ở đâu?</li>
+                <li>Lender có cho vay tại khu vực đó không?</li>
+                <li>Tài sản thuộc loại nào?</li>
+                <li>Tài sản đã có hợp đồng mua bán chưa?</li>
+                <li>Giá mua và chi phí mua tài sản là bao nhiêu?</li>
+                <li>Có tiền thuê dự kiến không?</li>
+                <li>Có cần valuation hoặc pre-valuation không?</li>
+                <li>Tổng số tiền cần có để hoàn tất giao dịch là bao nhiêu?</li>
+              </ul>
+            </section>
+
+            <section class="section-card">
+              <h2>2.2. Vai trò của Step Security trong luồng Application</h2>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Nội dung</th>
+                      <th>Mô tả</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Vị trí trong luồng</td><td>Sau Step Solution</td></tr>
+                    <tr><td>Tên màn hình</td><td>Details of the property</td></tr>
+                    <tr><td>Vai trò chính</td><td>Nhập chi tiết tài sản bảo đảm</td></tr>
+                    <tr><td>Kết quả mong muốn</td><td>Xác định tài sản có phù hợp để dùng làm security hay không</td></tr>
+                    <tr><td>Bước sau</td><td>Who’s on the loan - SMSF details</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="section-card">
+              <h2>2.3. Danh sách field trong Step Security</h2>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Field / Keyword</th>
+                      <th>Loại field</th>
+                      <th>Ý nghĩa nghiệp vụ</th>
+                      <th>Ảnh hưởng đến Application</th>
+                      <th>Ghi chú</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Details of the property</td><td>Page title</td><td>Màn hình nhập chi tiết tài sản bảo đảm.</td><td>Là cơ sở để lender đánh giá tài sản có đủ điều kiện làm security không.</td><td>Thuộc Step Security.</td></tr>
+                    <tr><td>Full Application</td><td>Status / Message</td><td>Cho biết hồ sơ đang đi theo luồng nhập đầy đủ thông tin.</td><td>Broker cần hoàn thiện nhiều field hơn so với Quick Conditional.</td><td>Xuất hiện sau khi chọn Full Application.</td></tr>
+                    <tr><td>Property details</td><td>Section title</td><td>Nhóm thông tin chính về tài sản.</td><td>Dữ liệu này dùng cho kiểm tra khu vực, chi phí, valuation và credit decision.</td><td>Nhóm field chính của màn hình.</td></tr>
+                    <tr><td>Quick check</td><td>System process</td><td>Kiểm tra nhanh xem lender có thể cho vay với tài sản/khu vực này không.</td><td>Nếu không đạt, Application có thể bị chặn hoặc cần đổi Solution.</td><td>Dựa nhiều vào địa chỉ và postcode.</td></tr>
+                    <tr><td>Evidence of rental income</td><td>Upload / Dropdown</td><td>Tài liệu chứng minh thu nhập cho thuê của tài sản.</td><td>Có thể ảnh hưởng đến serviceability, đặc biệt với investment property hoặc SMSF loan.</td><td>Có thể upload hoặc nhập tay.</td></tr>
+                    <tr><td>Enter details manually</td><td>Dropdown option</td><td>Broker chọn nhập thông tin thủ công.</td><td>Broker phải tự nhập các thông tin property thay vì hệ thống đọc từ tài liệu.</td><td>Dùng khi không upload tài liệu.</td></tr>
+                    <tr><td>Search address</td><td>Text / Address search</td><td>Địa chỉ tài sản bảo đảm.</td><td>Dùng để kiểm tra khu vực cho vay và xác định thông tin tài sản.</td><td>Field rất quan trọng.</td></tr>
+                    <tr><td>TBA</td><td>Checkbox</td><td>Tài sản chưa xác định địa chỉ đầy đủ.</td><td>Nếu TBA, cần nhập suburb, state và postcode để kiểm tra khu vực.</td><td>TBA = To Be Advised.</td></tr>
+                    <tr><td>Suburb</td><td>Text</td><td>Khu vực / vùng ngoại ô nơi tài sản tọa lạc.</td><td>Ảnh hưởng đến policy theo khu vực.</td><td>Cần nếu TBA.</td></tr>
+                    <tr><td>State</td><td>Text / Select</td><td>Bang nơi tài sản tọa lạc.</td><td>Policy có thể khác nhau theo từng bang.</td><td>Cần nếu TBA.</td></tr>
+                    <tr><td>Postcode</td><td>Text</td><td>Mã bưu chính của tài sản.</td><td>Dùng để kiểm tra vùng rủi ro hoặc khu vực lender không hỗ trợ.</td><td>Cần nếu TBA.</td></tr>
+                    <tr><td>We lend in this area!</td><td>System result</td><td>Hệ thống xác nhận lender có hỗ trợ cho vay ở khu vực này.</td><td>Đây là tín hiệu cho thấy hồ sơ có thể tiếp tục với tài sản này.</td><td>Nếu không có xác nhận này, cần kiểm tra lại.</td></tr>
+                    <tr><td>Property is commercial</td><td>Checkbox</td><td>Đánh dấu nếu tài sản là tài sản thương mại.</td><td>Có thể làm hồ sơ áp dụng policy commercial thay vì residential.</td><td>Ảnh hưởng đến LVR, valuation và product.</td></tr>
+                    <tr><td>Unit / Lot no.</td><td>Text input</td><td>Số căn, số lô hoặc mã đơn vị của tài sản.</td><td>Giúp xác định chính xác tài sản, nhất là unit, apartment, townhouse hoặc dự án.</td><td>Optional nếu không áp dụng.</td></tr>
+                    <tr><td>Street name</td><td>Text input</td><td>Tên đường của tài sản.</td><td>Hỗ trợ xác minh địa chỉ chính xác.</td><td>Có thể đã được lấy từ Search address.</td></tr>
+                    <tr><td>Development name</td><td>Text input</td><td>Tên dự án nếu tài sản thuộc một development/project.</td><td>Quan trọng với off the plan, apartment hoặc khu phức hợp.</td><td>Optional nếu không có dự án.</td></tr>
+                    <tr><td>Signed contract</td><td>Yes / No</td><td>Xác định đã có hợp đồng mua bán đã ký hay chưa.</td><td>Nếu có signed contract, lender có thể yêu cầu đối chiếu giá mua, settlement date và điều kiện hợp đồng.</td><td>Field quan trọng cho purchase case.</td></tr>
+                    <tr><td>Anticipated finance date</td><td>Date input</td><td>Ngày dự kiến cần hoàn tất điều kiện finance.</td><td>Ảnh hưởng đến timeline xử lý hồ sơ và deadline approval.</td><td>Cần để broker quản lý thời hạn.</td></tr>
+                    <tr><td>Anticipated settlement date</td><td>Date input</td><td>Ngày dự kiến settlement, tức ngày hoàn tất giao dịch mua bán.</td><td>Là mốc quan trọng cho valuation, approval, document và giải ngân.</td><td>Field quan trọng cho purchase case.</td></tr>
+                    <tr><td>Property purchase price</td><td>Currency input</td><td>Giá mua tài sản.</td><td>Dùng để tính tổng vốn cần có, stamp duty và có thể ảnh hưởng đến LVR.</td><td>Thường là field bắt buộc.</td></tr>
+                    <tr><td>Estimated weekly rent</td><td>Currency input</td><td>Tiền thuê dự kiến mỗi tuần.</td><td>Có thể được dùng để đánh giá income và serviceability.</td><td>Cần kiểm tra nếu hệ thống tự ước tính.</td></tr>
+                    <tr><td>Please edit as required</td><td>System note</td><td>Nhắc broker kiểm tra và chỉnh tiền thuê nếu cần.</td><td>Nếu rent sai, serviceability có thể bị tính sai.</td><td>Không phải field nhập liệu.</td></tr>
+                    <tr><td>Estimated setup costs</td><td>Currency input</td><td>Chi phí thiết lập hồ sơ/khoản vay/tài sản.</td><td>Góp phần vào tổng số tiền client/SMSF cần chuẩn bị.</td><td>Có thể chưa bao gồm một số phí.</td></tr>
+                    <tr><td>Lender Risk Fees</td><td>System note</td><td>Phí rủi ro của lender nếu áp dụng.</td><td>Nếu không tính đúng, tổng chi phí thực tế có thể bị thiếu.</td><td>Tùy policy/product.</td></tr>
+                    <tr><td>Estimated stamp duty & government fees</td><td>Currency input</td><td>Thuế trước bạ và phí chính phủ khi mua tài sản.</td><td>Là khoản chi phí lớn, ảnh hưởng đến tổng funds required.</td><td>Cần tính theo state và property type.</td></tr>
+                    <tr><td>Estimated total funds required</td><td>Calculated / Currency input</td><td>Tổng số tiền ước tính cần có để hoàn tất giao dịch.</td><td>Giúp đánh giá client/SMSF có đủ tiền để settlement không.</td><td>Bao gồm giá mua và các chi phí liên quan.</td></tr>
+                    <tr><td>Estimated value of property</td><td>Currency input</td><td>Giá trị ước tính của tài sản.</td><td>Ảnh hưởng đến LVR và valuation.</td><td>Có thể lấy từ nguồn tham khảo như CoreLogic.</td></tr>
+                    <tr><td>CoreLogic data</td><td>Data source note</td><td>Nguồn dữ liệu tham khảo để ước tính giá trị tài sản.</td><td>Chỉ là tham khảo; lender vẫn có thể yêu cầu valuation chính thức.</td><td>Không nên xem là valuation cuối cùng.</td></tr>
+                    <tr><td>Type of property</td><td>Button group / Select</td><td>Loại tài sản bảo đảm.</td><td>Ảnh hưởng đến policy, valuation, LVR và khả năng lender chấp nhận.</td><td>Field quan trọng.</td></tr>
+                    <tr><td>Duplex</td><td>Property type</td><td>Tài sản dạng hai căn hoặc hai đơn vị nhà ở.</td><td>Có thể có policy khác với house thông thường.</td><td>Cần kiểm tra title/structure nếu cần.</td></tr>
+                    <tr><td>House</td><td>Property type</td><td>Nhà ở riêng lẻ.</td><td>Thường là loại tài sản phổ biến và dễ đánh giá.</td><td>Residential property.</td></tr>
+                    <tr><td>Townhouse</td><td>Property type</td><td>Nhà phố / nhà liền kề.</td><td>Có thể cần xem strata/body corporate tùy trường hợp.</td><td>Policy có thể khác house.</td></tr>
+                    <tr><td>Off the plan</td><td>Property type</td><td>Tài sản mua khi chưa hoàn thành xây dựng.</td><td>Rủi ro cao hơn, ảnh hưởng valuation, settlement timing và policy.</td><td>Cần kiểm tra kỹ với lender.</td></tr>
+                    <tr><td>Commercial</td><td>Property type</td><td>Tài sản thương mại.</td><td>Có thể áp dụng commercial policy, LVR và pricing khác.</td><td>Cần đồng bộ với checkbox Property is commercial.</td></tr>
+                    <tr><td>Unit/Apartment</td><td>Property type</td><td>Căn hộ hoặc unit.</td><td>Có thể cần kiểm tra diện tích, building type, strata và postcode policy.</td><td>Policy có thể nghiêm hơn house.</td></tr>
+                    <tr><td>Pre-Valuation</td><td>Yes / No</td><td>Kiểm tra đã có định giá sơ bộ chưa.</td><td>Nếu có, broker/lender có thể dùng để tham khảo trước valuation chính thức.</td><td>Không thay thế valuation chính thức.</td></tr>
+                    <tr><td>Property contact details</td><td>Text input</td><td>Thông tin liên hệ liên quan đến tài sản.</td><td>Dùng để sắp xếp inspection hoặc valuation nếu cần.</td><td>Có thể là agent/vendor/contact person.</td></tr>
+                    <tr><td>Broker loan summary notes</td><td>Textarea</td><td>Ghi chú nội bộ của broker về tài sản hoặc hồ sơ.</td><td>Giúp lưu lại các điểm cần chú ý khi review hoặc submit.</td><td>Không nên nhập thông tin không xác thực.</td></tr>
+                    <tr><td>Save for later</td><td>Button</td><td>Lưu thông tin để xử lý sau.</td><td>Application chưa đi tiếp nhưng dữ liệu được giữ lại.</td><td>Dùng khi thiếu thông tin.</td></tr>
+                    <tr><td>Next</td><td>Button</td><td>Chuyển sang bước kế tiếp.</td><td>Chỉ nên bấm khi thông tin property đã đủ và hợp lý.</td><td>Có thể bị khóa nếu thiếu field bắt buộc.</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="section-card">
+              <h2>2.4. Field có khả năng bắt buộc trong Step Security</h2>
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Nhóm thông tin</th>
+                      <th>Field có thể bắt buộc</th>
+                      <th>Lý do</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Địa chỉ tài sản</td><td>Search address hoặc Suburb / State / Postcode nếu TBA</td><td>Hệ thống cần biết tài sản ở đâu để kiểm tra lender có cho vay tại khu vực đó không.</td></tr>
+                    <tr><td>Kiểm tra khu vực</td><td>We lend in this area!</td><td>Nếu khu vực không được hỗ trợ, hồ sơ có thể không thể tiếp tục.</td></tr>
+                    <tr><td>Tình trạng hợp đồng</td><td>Signed contract</td><td>Ảnh hưởng đến timeline, tài liệu cần có và độ chắc chắn của giao dịch.</td></tr>
+                    <tr><td>Ngày quan trọng</td><td>Anticipated finance date, Anticipated settlement date</td><td>Dùng để quản lý deadline xử lý hồ sơ.</td></tr>
+                    <tr><td>Giá mua</td><td>Property purchase price</td><td>Cần để tính tổng tiền cần chuẩn bị và kiểm tra khoản vay.</td></tr>
+                    <tr><td>Chi phí mua tài sản</td><td>Stamp duty, government fees, setup costs</td><td>Dùng để tính total funds required.</td></tr>
+                    <tr><td>Loại tài sản</td><td>Type of property</td><td>Lender cần biết loại tài sản để áp dụng đúng policy.</td></tr>
+                    <tr><td>Định giá</td><td>Estimated value of property, Pre-Valuation</td><td>Ảnh hưởng đến LVR và valuation.</td></tr>
+                    <tr><td>Liên hệ tài sản</td><td>Property contact details</td><td>Có thể cần cho valuation hoặc inspection.</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
           </article>
         </section>
       </div>
 
       <footer class="site-footer">
-        Tài liệu đang trong quá trình hoàn thiện. Bước 2 sẽ được cập nhật sau.
+        Step 2 nội dung đã được cập nhật từ Solution_and_Security.md.
       </footer>
     </div>
   </body>
