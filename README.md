@@ -21,4 +21,4 @@ Step 3 is built from `step-3_who-on-the-load.md`; Step 1 and Step 2 are currentl
 2. Set the source branch to `main` or `master` and the folder to `docs`.
 3. Save the settings.
 
-After a few minutes, your site will be available at `https://<username>.github.io/<repository>/`.
+After a few minutes, your site will be available at [`https://<username>.github.io/<repository>/`.](https://dev06Alliance.github.io/mortgage-research/)
