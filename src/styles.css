@@ -248,6 +248,12 @@ tbody tr:last-child td {
   padding: 28px;
 }
 
+.content-card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 .content-card h2,
 .section-card h2,
 article h2,
@@ -262,7 +268,7 @@ article h2 {
   line-height: 1.1;
   border-bottom: 1px solid #dfe6de;
   padding-bottom: 10px;
-  margin-bottom: 28px;
+  margin-bottom: 0;
 }
 
 article h3 {
